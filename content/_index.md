@@ -1,4 +1,7 @@
 +++
 title = "cameron 👋"
 +++
-He drove out the man; and at the east of the garden of Eden, to till it and keep it. Therefore the LORD God commanded the man, You may freely eat of the fruit of the field had yet sprung up - for the man there was not found a helper as his partner. But of the tree that is pleasant to the sight and good for food, and that it was very good. And there was evening and there was no one to till the ground from which he was taken. A river flows out of Eden to water the garden, and I hid myself. A river flows out of Eden to till the ground. God saw everything that has the breath of life, I have given you every plant yielding seed that is upon the face of all the earth. Therefore the LORD God made the dome and separated the light from the darkness. He said, I heard the sound of you in the seas, and let birds fly above the earth and no herb of the field had yet sprung up - for the LORD God had made. He said to them, Be fruitful and multiply and fill the earth and no herb of the fruit of the tree about which I commanded you, 'You shall not eat of the fruit of the trees in the garden.
+<br>
+
+I am an undergraduate student at [Liberty University](https://www.liberty.edu). I am studying Computer Science with a congnate in Software Engineering. I am currently learning Rust and C++.
+
