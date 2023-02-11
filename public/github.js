@@ -7,11 +7,11 @@ fetch('https://gh-pinned-repos.egoist.dev/?username=wzid')
       const repo = data[i];
       html += `
         <div class="repo">
-          <h3>
+          <h4>
             <a href="${repo.link}">${repo.repo}</a>
             &middot;
             <strong style="color: ${repo.languageColor}">${repo.language}</strong>
-          </h3>
+          </h4>
           ${repo.description ? `<p>${repo.description}</p>` : ''}
         </div>
       `;

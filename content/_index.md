@@ -5,13 +5,14 @@ title = "cameron"
 <br>
 
 Hi, I'm Cameron. I am an undergraduate student at [Liberty University](https://www.liberty.edu) studying Computer Science with a congnate in Software Engineering.
+Some of my hobbies are coding, running, hanging out with friends and learning new things.
 
 <br><br>
 <details open>
     <summary>
-        <strong>
+        <b>
             Knowledge Base and Skills
-        </strong>
+        </b>
     </summary>
 
 - Java ☕
@@ -24,9 +25,9 @@ Hi, I'm Cameron. I am an undergraduate student at [Liberty University](https://w
 <br>
 <details open>
     <summary>
-        <strong>
+        <b>
             Currently Learning
-        </strong>
+        </b>
     </summary>
 
 - Rust 🦀

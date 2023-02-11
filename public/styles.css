@@ -14,6 +14,10 @@
     background: var(--highlight);
 }
 
+.inline-orange {
+    color: var(--orange);
+}
+
 h1 {
     color: var(--green);
     border-bottom: 1px solid;
@@ -48,7 +52,7 @@ body {
     justify-content: space-between;
 }
 .repo {
-    width: 49%;
+    width: calc(50% - .5em);
     padding: 1em;
     margin-bottom: 1rem;
     background: #353A3C;
