@@ -4,8 +4,7 @@ title = "cameron"
 
 <br>
 
-Hi, I'm Cameron. I am an undergraduate student at [Liberty University](https://www.liberty.edu) studying Computer Science with a congnate in Software Engineering. 
-I love to learn new thing
+Hi, I'm Cameron. I am an undergraduate student at [Liberty University](https://www.liberty.edu) studying Computer Science with a congnate in Software Engineering.
 
 <br><br>
 <details open>

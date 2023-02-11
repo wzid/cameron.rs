@@ -80,16 +80,11 @@ body {
     margin-top: auto;
     padding-bottom: 1rem;
     display: flex;
+    justify-content: start;
 }
 
-@media (min-width: 450px) {
-    #footer {
-        justify-content: start;
-    }
-    
-    #footer a {
-        margin-right: 1em;
-    }
+#footer a {
+    margin-right: 1em;
 }
 
 @media (min-width: 1080px) {
