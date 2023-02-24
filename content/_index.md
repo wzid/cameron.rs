@@ -6,7 +6,7 @@ title = "cameron"
 
 Hi, I'm Cameron. I am an undergraduate junior at [Liberty University](https://www.liberty.edu) studying Computer Science with a congnate in Software Engineering. I love to learn new things and teach people about programming.
 
-<br><br>
+<br>
 <details open>
     <summary>
         <b>
@@ -37,7 +37,7 @@ Hi, I'm Cameron. I am an undergraduate junior at [Liberty University](https://ww
 - Chess
 
 </details>
-<br><br>
+<br>
 
 ## Projects:
 <br>

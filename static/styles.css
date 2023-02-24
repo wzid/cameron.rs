@@ -3,7 +3,7 @@
     --green: #A9B665;
     --pink: #FFA8CE;
     --dark-pink: #de5490;
-    --highlight: #443e3c;
+    --highlight: #3B4142;
 }
 
 * {
@@ -19,13 +19,30 @@
     color: var(--orange);
 }
 
+
 h1 {
     color: var(--green);
     border-bottom: 1px solid;
     font-size: 2.5rem;
 }
 
+h1 span {
+    display: inline-block; /* Ensure the span can be transformed */
+    transition: 0.2s ease-in-out; /* Add transition for smooth animation */
+}
+
+
+h1 span:hover {
+    transform: translateY(-5px); /* Move span 5 pixels upwards when directly hovered */
+}
+
+summary::marker {
+    font-size: .85rem; /* Change this value to adjust the size of the arrow */
+}
+
+
 li {
+    margin-bottom: 5px;
     list-style-type: square;
 }
 
@@ -33,21 +50,14 @@ a {
     font-weight: bold;
     text-decoration: none;
     color: var(--pink);
-    line-height: .8rem;
-    transition: 0.15s;
     display: inline-block;
-    border-bottom: 1px transparent;
-    padding-bottom: 1.5px;
+    transition: 0.15s;
 }
   
 
 a:hover {
-    padding-bottom: 0;
     opacity: 60%;
-    border-bottom: 1px solid var(--pink);
-    /*text-underline-offset: 3px;
-    text-decoration: underline; */
-    /* background-color: var(--highlight);*/
+    text-decoration: 1px underline;
 }
 
 body {
@@ -60,7 +70,6 @@ body {
     font-family: Menlo, monospace;
     color: #f9f5d7;
     background-color: #1D2021;
-    font-size: .9em;
 }
 
 .github-data {
