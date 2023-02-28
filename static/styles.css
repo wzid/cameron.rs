@@ -1,95 +1,87 @@
 :root {
-    --orange: #E78A4E;
-    --green: #A9B665;
-    --pink: #FFA8CE;
-    --dark-pink: #de5490;
-    --highlight: #443e3c;
-    --text-color: #f9f5d7;
+  --orange: #E78A4E;
+  --green: #A9B665;
+  --pink: #FFA8CE;
+  --dark-pink: #de5490;
+  --highlight: #443e3c;
+  --text-color: #f9f5d7;
 }
 
 * {
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 ::selection {
-    background: var(--highlight);
+  background: var(--highlight);
 }
 
 .inline-orange {
-    color: var(--orange);
+  color: var(--orange);
 }
-
 
 h1 {
-    color: var(--green);
-    border-bottom: 1px solid;
-    font-size: 2.5rem;
-}
-
-h1 span {
-    display: inline-block; /* Ensure the span can be transformed */
-    transition: 0.2s ease-in-out; /* Add transition for smooth animation */
-}
-
-
-h1 span:hover {
-    transform: translateY(-5px); /* Move span 5 pixels upwards when directly hovered */
+  color: var(--green);
+  border-bottom: 1px solid;
+  font-size: 2.5rem;
 }
 
 summary::marker {
-    font-size: .85rem; /* Change this value to adjust the size of the arrow */
+  font-size: .85rem; /* Change this value to adjust the size of the arrow */
 }
 
+details li {
+  margin-bottom: 4px;
+  list-style-type: square;
+}
 
-li {
-    margin-bottom: 5px;
-    list-style-type: square;
+details li:nth-child(1) {
+  padding-top: 5px;
 }
 
 a {
-    font-weight: bold;
-    text-decoration: none;
-    color: var(--pink);
-    display: inline-block;
-    transition: 0.15s;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--pink);
+  display: inline-block;
+  transition: 0.15s;
 }
 
 
 a:hover {
-    opacity: 60%;
-    text-decoration: 1px underline;
+  opacity: 60%;
+  text-decoration: 1px underline;
 }
 
 body {
-    width: 100%;
-    height: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-family: Menlo, monospace;
-    color: var(--text-color);
-    background-color: #1D2021;
-    font-size: .85em;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: Menlo, monospace;
+  color: var(--text-color);
+  background-color: #1D2021;
+  font-size: .85em;
 }
 
 .github-data {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .repo {
-    width: calc(50% - .5em);
-    padding: 1em;
-    margin-bottom: 1rem;
-    background: #353A3C;
+  width: calc(50% - .5em);
+  padding: 1em;
+  margin-bottom: 1rem;
+  background: #353A3C;
 }
 
 .repo p {
-    padding-top: .5em;
-    font-size: .8em;
+  padding-top: .5em;
+  font-size: .8em;
 }
 
 #stars {
@@ -97,6 +89,7 @@ body {
   margin-left: auto;
   float: right;
   font-size: .9em;
+  font-weight: normal;
 
 }
 
@@ -109,40 +102,40 @@ body {
 }
 
 #horizontal-content {
-    padding: 1.5em;
-    width: 100%;
-    height: 100vh;
+  padding: 1.5em;
+  width: 100%;
+  height: 100vh;
 }
 
 #vertical-content {
-    height: 100%;
+  height: 100%;
 
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 #main {
-    padding-top: 3.5em;
+  padding-top: 3.5em;
 }
 
 #footer {
-    margin-top: auto;
-    padding-bottom: 1rem;
-    display: flex;
-    justify-content: start;
-    align-items: center;
+  margin-top: auto;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 
 #footer > * {
-    margin-right: 0.3em;
+  margin-right: 0.3em;
 }
 
 .link-separator {
-    font-size: 1.6em;
+  font-size: 1.6em;
 }
 
 @media (min-width: 1080px) {
-    #horizontal-content {
-        width: 60%;
-    }
+  #horizontal-content {
+    width: 60%;
+  }
 }

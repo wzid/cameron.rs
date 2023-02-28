@@ -33,8 +33,7 @@ Hi, I'm Cameron. I am an undergraduate junior at [Liberty University](https://ww
 - C++
 - HTML, CSS
 - PHP
-- Fuzzy String Matching
-- Chess
+- [Algorithms](https://leetcode.com/wzid)
 
 </details>
 <br>
