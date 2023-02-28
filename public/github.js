@@ -10,7 +10,10 @@ fetch('https://gh-pinned-repos.egoist.dev/?username=wzid')
           <h4>
             <a href="${repo.link}">${repo.repo}</a>
             &middot;
-            <strong style="color: ${repo.languageColor}">${repo.language}</strong>
+            <div id="language" style="background-color: ${repo.languageColor}">
+              ${repo.language}
+            </div>
+            ${repo.stars ? `<div id="stars"> ${repo.stars} &#11088 </div>` : ''}
           </h4>
           ${repo.description ? `<p>${repo.description}</p>` : ''}
         </div>

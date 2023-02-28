@@ -4,6 +4,7 @@
     --pink: #FFA8CE;
     --dark-pink: #de5490;
     --highlight: #443e3c;
+    --text-color: #f9f5d7;
 }
 
 * {
@@ -39,7 +40,7 @@ a {
     border-bottom: 1px transparent;
     padding-bottom: 1.5px;
 }
-  
+
 
 a:hover {
     padding-bottom: 0;
@@ -58,9 +59,9 @@ body {
     flex-direction: row;
     justify-content: center;
     font-family: Menlo, monospace;
-    color: #f9f5d7;
+    color: var(--text-color);
     background-color: #1D2021;
-    font-size: .9em;
+    font-size: .85em;
 }
 
 .github-data {
@@ -79,6 +80,22 @@ body {
 .repo p {
     padding-top: .5em;
     font-size: .8em;
+}
+
+#stars {
+  color: #fff;
+  margin-left: auto;
+  float: right;
+  font-size: .9em;
+
+}
+
+#language {
+  color: #fff;
+  display: inline-block;
+  font-size: .9em;
+  padding-left: .25rem;
+  padding-right: .25rem;
 }
 
 #horizontal-content {
