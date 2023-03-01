@@ -32,7 +32,7 @@ Hi, I'm Cameron. I am an undergraduate junior at [Liberty University](https://ww
 - Rust 🦀
 - C++
 - HTML, CSS
-- PHP
+- PHP and SQL
 - [Algorithms](https://leetcode.com/wzid)
 
 </details>
