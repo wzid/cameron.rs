@@ -1,0 +1,208 @@
+:root {
+  --blue: #6eb0a3;
+  --green: #A9B665;
+  --pink: #FFA8CE;
+  --dark-pink: #de5490;
+  --highlight: #443e3c;
+  --text-color: #f9f5d7;
+  --fake-opacity: #8b8b7c;
+  --background: #1D2021;
+  --box: #3B4142;
+  --regular: -apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;
+  --code: SFMono-Regular,Consolas,Menlo,monospace;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background: var(--highlight);
+}
+
+.content {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.title {
+  display: flex;
+  padding-bottom: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+  color: var(--text-color);
+  border-bottom: 1px solid; 
+  font-size: 2.15rem;
+}
+
+.date {
+  display: inherit;
+  justify-content: start;
+  align-items: center;
+  color: var(--text-color);
+  padding-bottom: .4rem;
+  font-weight: normal;
+  font-size: .85rem;
+}
+
+.date > * {
+  padding-left: .5rem;
+}
+
+p {
+  line-height: 1.8rem;
+}
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--blue);
+  transition: 0.15s;
+}
+
+a:hover {
+  opacity: 60%;
+  text-decoration: 1px underline;
+}
+
+h1 {
+  font-size: 1.75rem;
+  padding-bottom: .5rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  padding-bottom: .5rem;
+}
+
+li::marker {
+  font-size: 1.05rem;
+  font-weight: bold;
+}
+
+ol li {
+  margin-bottom: .5rem;
+  line-height: 2rem;
+}
+
+p code {
+  font-size: .85rem;
+  font-family: var(--code);
+  border-radius: .3rem;
+  padding: .15rem .2rem .15rem .2rem;
+  border: 1px solid #687275;
+  background-color: var(--box);
+}
+
+blockquote {
+  display: inline-block;
+  background-color: var(--box);
+  margin: 1rem 0 1rem;
+  border: 1px solid var(--blue);
+  border-radius: .4rem;
+  padding: .75rem;
+}
+
+blockquote code {
+  background-color: var(--background);
+}
+
+blockquote a {
+  font-size: .9rem;
+}
+
+img {
+  width: 90%;
+  height: 90%;
+  border-radius: .3rem;
+  box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.4);
+  margin: 20px 0 40px;
+}
+
+pre {
+  width: 90%;
+  border-radius: .4rem;
+  padding: 1rem;
+  margin: 1rem 0 1rem;
+  overflow: auto;
+}
+
+pre table td {
+  padding: 0;
+}
+
+/* The line number cells */
+pre table td:nth-of-type(1) {
+  text-align: center;
+  user-select: none;
+}
+
+pre mark {
+  /* If you want your highlights to take the full width. */
+  display: block;
+  /* The default background colour of a mark is bright yellow */
+  background-color: rgba(254, 252, 232, 0.9);
+}
+
+pre table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: var(--regular);
+  color: var(--text-color);
+  background-color: var(--background);
+  font-size: 1rem;
+}
+
+#horizontal-content {
+  padding: 1.5em;
+  width: 100%;
+  height: 100vh;
+}
+
+#vertical-content {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#main {
+  padding-top: 3.5rem;
+}
+
+#footer {
+  font-size: .9rem;
+  margin-top: auto;
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+}
+
+#footer > * {
+  margin-right: 0.3rem;
+}
+
+.link-separator {
+  padding-bottom: .25rem;
+  font-size: 2rem;
+}
+
+@media (min-width: 1080px) {
+  #horizontal-content {
+    width: 60%;
+  }
+}
+

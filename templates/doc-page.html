@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="/docs.css">
+{% endblock stylesheet %}
+
+{% block content %}
+
+<h1 class="title">
+  {{ page.title }}
+
+  {% if page.extra.github %}
+    <div class="date">
+      <a href="{{ page.extra.github }}">{{ page.extra.github }}</a>
+    </div>
+  {% endif %}
+
+  <div class="date">
+    Last Modified:  
+    <div style="color: var(--green)">{{ page.date }}</div>
+  </div>
+</h1>
+<br>
+
+<div class="content">
+  {{ page.content | safe }}
+</div>
+
+{% endblock content %}
+
+{% block footer %}
+<a href="{{ get_url(path='@/_index.md') }}">Portfolio</a>
+<span class="link-separator">&middot;</span>
+<a href="{{ get_url(path='@/docs/_index.md') }}">Documentation</a>
+{% endblock footer %}

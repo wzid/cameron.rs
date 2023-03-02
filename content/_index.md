@@ -40,5 +40,5 @@ Hi, I'm Cameron. I am an undergraduate junior at [Liberty University](https://ww
 
 ## Projects:
 <br>
-<div id="github-data" class="github-data"></div>
+<div id="github-data" class="block-data"></div>
 <script src="github.js"></script>
