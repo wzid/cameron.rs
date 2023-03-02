@@ -3,7 +3,7 @@
   --green: #A9B665;
   --pink: #FFA8CE;
   --dark-pink: #de5490;
-  --highlight: #443e3c;
+  --highlight: #615856;
   --text-color: #f9f5d7;
   --fake-opacity: #8b8b7c;
   --background: #1D2021;
@@ -66,14 +66,18 @@ a:hover {
   text-decoration: 1px underline;
 }
 
+h1,
+h2,
+h3 {
+  padding-bottom: .5rem;
+}
+
 h1 {
   font-size: 1.75rem;
-  padding-bottom: .5rem;
 }
 
 h2 {
   font-size: 1.4rem;
-  padding-bottom: .5rem;
 }
 
 li::marker {
@@ -99,10 +103,10 @@ p code {
 blockquote {
   display: inline-block;
   background-color: var(--box);
-  margin: 1rem 0 1rem;
+  margin: .5rem 0 .5rem;
   border: 1px solid var(--blue);
   border-radius: .4rem;
-  padding: .75rem;
+  padding: .5rem .75rem .5rem .75rem;
 }
 
 blockquote code {
@@ -111,6 +115,12 @@ blockquote code {
 
 blockquote a {
   font-size: .9rem;
+}
+
+.showcase {
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 
 .showcase-img {

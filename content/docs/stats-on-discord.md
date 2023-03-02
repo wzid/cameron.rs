@@ -17,8 +17,8 @@ github = "https://github.com/wzid/stats-on-discord"
 
 # Showcase
 
-<img class="showcase-img" src="/images/show1.png"> 
-<img class="showcase-img" src="/images/show2.png">
+<img class="showcase-img" src="/images/docs/stats-on-discord/show1.png"> 
+<img class="showcase-img" src="/images/docs/stats-on-discord/show2.png">
 
 <br>
 
@@ -37,11 +37,11 @@ Before we can edit the configuration file we need to create a Discord bot
 
 Select the `Bot` tab and then press the `Add Bot` button 
 
-<img src="/images/create-bot.png">
+<img src="/images/docs/stats-on-discord/create-bot.png">
 
 Give your bot a cool name then copy the token using the `Copy` button
 
-<img src="/images/copy-token.png">
+<img src="/images/docs/stats-on-discord/copy-token.png">
 
 Paste the token into `bot-properties.yml`
 
@@ -54,13 +54,13 @@ We need to invite the bot to your guild now.
 
 Select the `OAuth2` tab and then select `URL Generator`
 
-<img src="/images/link-gen.png" style="width: 25%; height: 25%;">
+<img src="/images/docs/stats-on-discord/link-gen.png" style="width: 25%; height: 25%;">
 
 <br>
 
 After that, find and select `bot` from the Scopes and `Administrator` from the Bot Permissions
 
-<img src="/images/perms.png">
+<img src="/images/docs/stats-on-discord/perms.png">
 
 Now scroll down and copy the link into your browser and invite the bot into your server
 
@@ -70,13 +70,13 @@ Now scroll down and copy the link into your browser and invite the bot into your
 
 Go to your discord settings, select the `Advanced` tab and enable `Developer Mode`
 
-<img src="/images/dev-mode.png">
+<img src="/images/docs/stats-on-discord/dev-mode.png">
 
 <br>
 
 Now find the channel that you want the statistics to be displayed in and **right click** on that channel. Then click `Copy ID`
 
-<img src="/images/copy-id.png" style="width: 25%; height: 25%;">
+<img src="/images/docs/stats-on-discord/copy-id.png" style="width: 25%; height: 25%;">
 
 Paste the channel id into `bot-properties.yml`
 
