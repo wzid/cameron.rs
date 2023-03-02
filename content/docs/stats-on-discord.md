@@ -11,12 +11,20 @@ github = "https://github.com/wzid/stats-on-discord"
 - [Installation](#installation)
   - [Creating the bot](#creating-the-bot)
   - [Setting Discord Embed Channel](#setting-discord-embed-channel)
+- [Configuration](#configuration)
+
+<br>
+
+# Showcase
+
+<img class="showcase-img" src="/images/show1.png"> 
+<img class="showcase-img" src="/images/show2.png">
 
 <br>
 
 # Installation
 
-1. Download the [latest release](https://wzid.dev)
+1. Download the [latest release](https://github.com/wzid/stats-on-discord/releases/)
 
 2. Put `stats-on-discord-VERSION_NUMBER.jar` in your server's `plugins` folder and restart your server. A folder named `stats-on-discord` will be generated with the `bot-properties.yml` file.
 
@@ -85,4 +93,20 @@ If you restart your server then the embeds should be displayed in the correct ch
 
 # Configuration
 
-> **TODO**
+> **❗** Remember to restart the server after changing a setting
+
+For now there are only 4 types of statistics the bot can display. You can change any of the following values in the `bot-properties.yml` file to display them
+
+| Stat Name | Description |
+|-----------|-------------|
+| play-time | How long the player has played on the server | 
+| deaths | How many times the player has died |
+| damage-dealt | The amount of damage, in hearts, a player has dealt |
+| jumps | The amount of times a player has jumped |
+
+Any other settings can be found below
+
+| Name | Description |
+|------|-------------|
+| embed-color | The color for each embed the bot sends and updates |
+

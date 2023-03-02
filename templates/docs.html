@@ -1,8 +1,12 @@
 {% extends "base.html" %}
 
+{% block stylesheet %}
+<link rel="stylesheet" href="/docs.css">
+{% endblock stylesheet %}
+
 {% block content %}
 <h1 class="title">
-  {{ section.title }}  
+  {{ section.title }}
 </h1>
 
 <br>
@@ -12,6 +16,12 @@
   <div class="doc">
     <h4>
       <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+      
+      <div class="date">
+        Last Modified:  
+        <div style="color: var(--green)">{{ page.date }}</div>
+      </div> 
+    
     </h4>
     <p>
     {{ page.description | safe }}
@@ -22,3 +32,7 @@
 </div>
 
 {% endblock content %}
+
+{% block footer %}
+<a href="{{ get_url(path='@/_index.md') }}">Portfolio</a>
+{% endblock footer %}

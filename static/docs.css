@@ -8,6 +8,7 @@
   --fake-opacity: #8b8b7c;
   --background: #1D2021;
   --box: #3B4142;
+  --box-bright: #565F61;
   --regular: -apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;
   --code: SFMono-Regular,Consolas,Menlo,monospace;
 }
@@ -54,8 +55,7 @@
 p {
   line-height: 1.8rem;
 }
-a {
-  font-weight: bold;
+a { 
   text-decoration: none;
   color: var(--blue);
   transition: 0.15s;
@@ -87,6 +87,7 @@ ol li {
 }
 
 p code {
+  white-space:nowrap;
   font-size: .85rem;
   font-family: var(--code);
   border-radius: .3rem;
@@ -112,11 +113,17 @@ blockquote a {
   font-size: .9rem;
 }
 
+.showcase-img {
+  width: 25%;
+  border-radius: 0.3rem;
+  margin: .5rem 4rem 2rem 0rem;
+}
+
 img {
   width: 90%;
   height: 90%;
   border-radius: .3rem;
-  box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 10px 20px 8px rgba(0, 0, 0, 0.3);
   margin: 20px 0 40px;
 }
 
@@ -150,6 +157,37 @@ pre table {
   border-collapse: collapse;
 }
 
+table {
+  margin: 1rem 0 1rem;
+  border-radius: .4rem;
+  border: 1px solid var(--blue);
+  border-spacing: 0;
+  empty-cells:show
+}
+
+table th {
+  padding: .5rem; 
+}
+
+table tr:nth-child(2n + 1) {
+  background-color: var(--box);
+}
+
+table tr:nth-child(2n) {
+  /* */
+  background-color: var(--box-bright);
+}
+
+table thead {
+  background-color: var(--box);
+  text-align: left;
+  vertical-align: bottom
+}
+
+table td {
+  padding: .5rem .75rem .5rem .5rem; 
+}
+
 body {
   width: 100%;
   height: 100%;
@@ -161,6 +199,33 @@ body {
   color: var(--text-color);
   background-color: var(--background);
   font-size: 1rem;
+}
+
+.block-data {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.doc {
+  border-radius: 0.3rem;
+  width: 100%;
+  padding: 1rem;
+  margin: 0 1rem 1rem 1rem;
+  background: #353A3C;
+}
+
+.doc h4 {
+  display: flex;
+  padding-bottom: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+  font-size: 1.2rem;
+}
+
+.doc p {
+  padding-top: .5rem;
 }
 
 #horizontal-content {

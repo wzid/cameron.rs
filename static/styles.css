@@ -102,19 +102,6 @@ body {
   padding-right: .25rem;
 }
 
-.doc {
-  border-radius: 0.3rem;
-  width: calc(33% - .5rem);
-  padding: 1rem;
-  margin-bottom: 1rem;
-  background: #353A3C;
-}
-
-.doc p {
-  padding-top: .5rem;
-  font-size: .8em;
-}
-
 #horizontal-content {
   padding: 1.5em;
   width: 100%;
