@@ -17,9 +17,10 @@ github = "https://github.com/wzid/stats-on-discord"
 
 # Showcase
 
-<img class="showcase-img" src="/images/docs/stats-on-discord/show1.png"> 
-<img class="showcase-img" src="/images/docs/stats-on-discord/show2.png">
-
+<div class="showcase">
+  <img class="showcase-img" src="/images/docs/stats-on-discord/show1.png"> 
+  <img class="showcase-img" src="/images/docs/stats-on-discord/show2.png">
+</div>
 <br>
 
 # Installation

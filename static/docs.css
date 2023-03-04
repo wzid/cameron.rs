@@ -1,3 +1,15 @@
+/* Obtained from https://developer.apple.com/fonts */
+@font-face {
+  font-family: Pro-Display;
+  src: url("fonts/regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: Pro-Display;
+  font-weight: bold;
+  src: url("fonts/bold.woff") format("woff");
+}
+
 :root {
   --blue: #6eb0a3;
   --green: #A9B665;
@@ -9,7 +21,7 @@
   --background: #1D2021;
   --box: #3B4142;
   --box-bright: #565F61;
-  --regular: -apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;
+  --regular: -apple-system, BlinkMacSystemFont, Pro-Display;
   --code: SFMono-Regular,Consolas,Menlo,monospace;
 }
 
@@ -29,7 +41,7 @@
 
 .title {
   display: flex;
-  padding-bottom: 0;
+  padding-bottom: .25rem;
   flex-direction: row;
   justify-content: space-between;
   align-items: end;
@@ -38,14 +50,12 @@
   font-size: 2.15rem;
 }
 
+
 .date {
+  display: inherit;
   color: var(--text-color);
   font-weight: normal;
   font-size: .85rem;
-}
-
-.date > * {
-  padding-left: .5rem;
 }
 
 p {
@@ -118,6 +128,7 @@ blockquote a {
   justify-content: start;
   align-items: center;
 }
+
 
 .showcase-img {
   width: 25%;
@@ -288,11 +299,22 @@ body {
 }
 
 @media (max-width: 1080px) {
+  .title > * {
+    line-height: 1.6rem;
+  }
+
   .title {
     font-size: 1.9rem;
-    white-space:nowrap;
     flex-direction: column;
     align-items: start;
+  }
+
+  .showcase {
+    flex-direction: column;
+  }
+
+  .showcase-img {
+    width: 60%;
   }
 
   h1 {
@@ -303,8 +325,8 @@ body {
     font-size: 1.3rem;
   }
 
-  .date {
-    display: block;
+  p code {
+    font-size: .7rem;
   }
 
   body {
