@@ -124,6 +124,8 @@ body {
   display: flex;
   justify-content: start;
   align-items: center;
+  padding-top: 5rem;
+  padding-bottom: 1rem;
 }
 
 #footer > * {
@@ -132,6 +134,15 @@ body {
 
 .link-separator {
   font-size: 1.8rem;
+}
+
+@media (max-width: 1080px) {
+  #main {
+    padding-top: 1rem;
+  }
+  .repo {
+    width: 100%;
+  }
 }
 
 @media (min-width: 1080px) {

@@ -39,11 +39,7 @@
 }
 
 .date {
-  display: inherit;
-  justify-content: start;
-  align-items: center;
   color: var(--text-color);
-  padding-bottom: .4rem;
   font-weight: normal;
   font-size: .85rem;
 }
@@ -175,6 +171,22 @@ table {
   empty-cells:show
 }
 
+table tr:last-child td:last-child {
+  border-bottom-right-radius: .35rem;
+}
+
+table tr:last-child td:first-child {
+  border-bottom-left-radius: .35rem;
+}
+
+table th:last-child {
+  border-top-right-radius: .35rem;
+}
+
+table th:first-child {
+  border-top-left-radius: .35rem;
+}
+
 table th {
   padding: .5rem; 
 }
@@ -221,7 +233,7 @@ body {
   border-radius: 0.3rem;
   width: 100%;
   padding: 1rem;
-  margin: 0 1rem 1rem 1rem;
+  margin-bottom: 1rem;
   background: #353A3C;
 }
 
@@ -273,6 +285,38 @@ body {
 .link-separator {
   padding-bottom: .25rem;
   font-size: 2rem;
+}
+
+@media (max-width: 1080px) {
+  .title {
+    font-size: 1.9rem;
+    white-space:nowrap;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .date {
+    display: block;
+  }
+
+  body {
+    font-size: .8rem;
+  }
+  .doc {
+    padding: .75rem;
+  }
+  .doc h4 {
+    font-size: 1rem;
+    align-items: center;
+  }
 }
 
 @media (min-width: 1080px) {
