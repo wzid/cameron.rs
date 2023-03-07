@@ -1,14 +1,8 @@
-/* Obtained from https://developer.apple.com/fonts */
 @font-face {
-  font-family: Pro-Display;
-  src: url("fonts/regular.woff") format("woff");
+  font-family: Inter;
+  src: url("fonts/inter.woff2") format("woff2");
 }
 
-@font-face {
-  font-family: Pro-Display;
-  font-weight: bold;
-  src: url("fonts/bold.woff") format("woff");
-}
 
 :root {
   --blue: #6eb0a3;
@@ -21,7 +15,7 @@
   --background: #1D2021;
   --box: #3B4142;
   --box-bright: #565F61;
-  --regular: -apple-system, BlinkMacSystemFont, Pro-Display;
+  --regular: -apple-system, BlinkMacSystemFont, Inter;
   --code: SFMono-Regular,Consolas,Menlo,monospace;
 }
 
@@ -59,7 +53,7 @@
 }
 
 p {
-  line-height: 1.8rem;
+  line-height: 1.5rem;
 }
 a { 
   text-decoration: none;
