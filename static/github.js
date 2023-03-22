@@ -6,9 +6,12 @@ fetch('https://gh-pinned-repos.egoist.dev/?username=wzid')
     for (let i = 0; i < data.length; i++) {
       const repo = data[i];
       html += `
-        <div class="repo">
+        <div id="repo" class="repo">
+        <a href="${repo.link}"></a>
           <h4>
-            <a href="${repo.link}">${repo.repo}</a>
+            <span style="color:var(--pink)">
+              ${repo.repo}
+            </span>
             &middot;
             <div id="language" style="background-color: ${repo.languageColor}">
               ${repo.language}

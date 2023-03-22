@@ -7,12 +7,8 @@ title = "cameron"
 Hi, I'm Cameron. I am a junior at [Liberty University](https://www.liberty.edu) studying Software Engineering. I love to learn new things and teach people about programming. I use this site to host my portfolio along with [documentation](/docs) for some of my projects.
 
 <br>
-<details open>
-    <summary>
-        <b>
-            Skills
-        </b>
-    </summary>
+
+**Skills**
 
 - Java ☕
 - Kotlin 💜
@@ -22,12 +18,8 @@ Hi, I'm Cameron. I am a junior at [Liberty University](https://www.liberty.edu) 
 </details>
 
 <br>
-<details open>
-    <summary>
-        <b>
-            Currently Learning
-        </b>
-    </summary>
+
+**Currently Learning**
 
 - Rust 🦀
 - C++
