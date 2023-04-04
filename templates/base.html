@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+  <title>cameron &middot; software engineer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% block stylesheet %}
+  <link rel="stylesheet" href="/styles.css">
+  {% endblock stylesheet %}
+  <script src="https://kit.fontawesome.com/6029373499.js" crossorigin="anonymous"></script>
+  <meta name="description" content="Hi, I'm Cameron. I am a junior at Liberty University studying Software Engineering.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WK9TQCY3Z8"></script>
   <script>
@@ -11,21 +20,15 @@
 
     gtag('config', 'G-WK9TQCY3Z8');
   </script>
-
-  <title>cameron &middot; software engineer</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  {% block stylesheet %}
-  <link rel="stylesheet" href="/styles.css">
-  {% endblock stylesheet %}
-  <meta name="description" content="Hi, I'm Cameron. I am a junior at Liberty University studying Software Engineering.">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
 </head>
 
 
 <body>
   <div id="horizontal-content">
+    
     <div id="vertical-content">
+      {% block nav_bar %}
+      {% endblock %}
 
       <section class="section" id="main">
         <div class="container">
@@ -36,11 +39,23 @@
 
       <div id="footer">
         {% block footer %}
-        <a href="https://github.com/wzid">Github</a>
-        <span class="link-separator">&middot;</span>
-        <a href="https://www.linkedin.com/in/cameron-k-a00565257/">Linkedin</a>
-        <span class="link-separator">&middot;</span>
-        <a href="mailto:cameronkauffman@outlook.com">Email</a> 
+
+        <a href="https://github.com/wzid">
+          <i class="fa-brands fa-github fa-2xl"></i>
+          <span class="hidden-text">Github</span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/cameron-k-a00565257/">
+          <i class="fa-brands fa-linkedin fa-2xl"></i>
+          <span class="hidden-text">Linkedin</span>
+        </a>
+        <!--
+          <span class="link-separator">&middot;</span>
+          --->
+        <a href="mailto:cameronkauffman@outlook.com">
+          <i class="fa-solid fa-envelope fa-2xl"></i>
+          <span class="hidden-text">Email</span>
+        </a>
         {% endblock footer %}
       </div>
 

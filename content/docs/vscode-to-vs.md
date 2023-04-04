@@ -1,6 +1,6 @@
 +++
 title = "vscode-to-vs"
-date = 2023-03-02
+date = 2023-04-03
 description = "Documentation for the vscode-to-vs utility command"
 
 [extra]
@@ -8,29 +8,22 @@ github = "https://github.com/wzid/vscode-to-vs"
 +++
 
 This command allows you to create the files needed for a Visual Studio C++ project. Mostly for operating systems that do not support Visual Studio C++ development.
-
-<br>
-
 # Showcase
-
 <div class="showcase">
   <img class="showcase-img" src="/images/docs/vscode-to-vs/input.png" style="width:50%"> 
   <img class="showcase-img" src="/images/docs/vscode-to-vs/result.png" style="width:30%">
 </div>
 <br>
 
-# Installation
+<div class="heading-quote">
 
-> #### Make sure you are using the zsh terminal
-> [How to switch to zsh terminal](https://support.apple.com/en-us/HT208050)
+  # Installation
 
-1. Download [install.sh](https://github.com/wzid/vscode-to-vs/releases/latest/download/install.sh)
+  > Make sure you have [Homebrew](https://brew.sh) installed on your Mac
 
-2. Once downloaded, type `sh`  into the terminal and then drag the `install.sh` file into the terminal. The command should look like `sh /Users/NAME/Downloads/install.sh`
+</div>
 
-3. The script should download the `vscode-to-vs` executable and put it in your **PATH**
-
-4. Restart your terminal when the script finishes running
+Run `brew install wzid/tap/vscode-to-vs`
 
 # Usage
 

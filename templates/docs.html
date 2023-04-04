@@ -4,9 +4,23 @@
 <link rel="stylesheet" href="/docs.css">
 {% endblock stylesheet %}
 
+{% block nav_bar %}
+  <div class="nav-bar">
+    <div class="nav-tag">
+      <a href="{{ get_url(path='@/_index.md') }}"></a>
+      <i class="fa-solid fa-user fa-lg"></i>
+      <p>Portfolio</p>
+    </div>
+  </div>
+{% endblock %}
+
 {% block content %}
-<h1 class="title">
-  {{ section.title }}
+  
+<h1 class="heading">
+  <i class="fa-solid fa-book"></i>
+  <span>
+    {{ section.title }}
+  </span>
 </h1>
 
 <br>
@@ -18,7 +32,7 @@
       <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
       
       <div class="date">
-        Last Modified:  
+        Updated:  
         <div style="color: var(--green); padding-left:.3rem">{{ page.date }}</div>
       </div> 
     
@@ -33,6 +47,4 @@
 
 {% endblock content %}
 
-{% block footer %}
-<a href="{{ get_url(path='@/_index.md') }}">Portfolio</a>
-{% endblock footer %}
+

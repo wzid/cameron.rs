@@ -1,35 +1,37 @@
-{% extends "base.html" %}
+{% extends "base.html" %} {% block stylesheet %}
+<link rel="stylesheet" href="/docs.css" />
+{% endblock stylesheet %} 
 
-{% block stylesheet %}
-<link rel="stylesheet" href="/docs.css">
-{% endblock stylesheet %}
+{% block nav_bar %}
+<div class="nav-bar">
+  <div class="nav-tag">
+    <a href="{{ get_url(path='@/_index.md') }}"></a>
+    <i class="fa-solid fa-user fa-lg"></i>
+    <p>Portfolio</p>
+  </div>
+  <div class="nav-tag">
+    <a href="{{ get_url(path='@/docs/_index.md') }}"></a>
+    <i class="fa-solid fa-book fa-lg"></i>
+    <p>Documentation</p>
+  </div>
+</div>
+{% endblock %}
 
 {% block content %}
-
 <h1 class="title">
-  {{ page.title }}
-
-  {% if page.extra.github %}
-    <div class="date">
-      <a href="{{ page.extra.github }}">{{ page.extra.github }}</a>
-    </div>
+  {{ page.title }} {% if page.extra.github %}
+  <div class="date">
+    <a href="{{ page.extra.github }}">{{ page.extra.github }}</a>
+  </div>
   {% endif %}
 
   <div class="date">
-    Last Modified:  
-    <div style="color: var(--green);padding-left:.3rem;">{{ page.date }}</div>
+    Updated:
+    <div style="color: var(--green); padding-left: 0.3rem">{{ page.date }}</div>
   </div>
 </h1>
-<br>
+<br />
 
-<div class="content">
-  {{ page.content | safe }}
-</div>
+<div class="content">{{ page.content | safe }}</div>
 
 {% endblock content %}
-
-{% block footer %}
-<a href="{{ get_url(path='@/_index.md') }}">Portfolio</a>
-<span class="link-separator">&middot;</span>
-<a href="{{ get_url(path='@/docs/_index.md') }}">Documentation</a>
-{% endblock footer %}
