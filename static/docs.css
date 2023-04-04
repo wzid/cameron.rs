@@ -32,7 +32,7 @@
   font-size: 0.9rem;
   display: flex;
   justify-content: end;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
 }
 
 .nav-tag {
@@ -355,7 +355,7 @@ body {
 }
 
 #vertical-content {
-  padding: 0rem 0rem 1.5rem 1.5rem;
+  padding: 0rem 0rem 0rem 1.5rem;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -363,10 +363,40 @@ body {
 
 #footer {
   margin-top: auto;
+  padding-top: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
+  position: relative;
+}
+
+#footer > a {
+  position: relative;
+  display: inline-block;
+  padding: 0 1rem;
+}
+
+#footer > a:hover {
+  opacity: 1;
+}
+
+#footer a::before {
+  transition: 0.2s;
+  opacity: 0;
+  content: attr(title);
+  position: absolute;
+  top: -1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: .75rem;
+  white-space: nowrap;
+}
+
+#footer a:hover:before {
+  opacity: 1;
+  top: -2rem;
 }
 
 #footer > * {

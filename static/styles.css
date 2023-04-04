@@ -164,19 +164,32 @@ body {
   position: relative;
 }
 
-.hidden-text {
-  visibility: hidden;
-  position: absolute;
-  top: -1.5em;
-  text-align: center;
-  color: var(--pink);
+#footer > a {
+  position: relative;
+  display: inline-block;
+  padding: 0 1rem;
 }
 
-#footer a:hover .hidden-text {
-  visibility: visible;
-  align-content: center;
-  color: var(--pink);
+#footer > a:hover {
   opacity: 1;
+}
+
+#footer a::before {
+  transition: 0.2s;
+  opacity: 0;
+  content: attr(title);
+  position: absolute;
+  top: -1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: .75rem;
+  white-space: nowrap;
+}
+
+#footer a:hover:before {
+  opacity: 1;
+  top: -2rem;
 }
 
 #footer > * {
