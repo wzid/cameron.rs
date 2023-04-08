@@ -5,9 +5,7 @@
   <title>cameron &middot; software engineer</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  {% block stylesheet %}
   <link rel="stylesheet" href="/styles.css">
-  {% endblock stylesheet %}
   <script src="https://kit.fontawesome.com/6029373499.js" crossorigin="anonymous"></script>
   <meta name="description" content="Hi, I'm Cameron. I am a junior at Liberty University studying Software Engineering.">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
@@ -34,6 +32,17 @@
         <div class="container">
           {% block content %}
           {% endblock %}
+          <script>
+            // Get the current domain
+            const domain = window.location.hostname;
+          
+            // Remove "docs" from the domain
+            const newDomain = "docs." + domain;
+          
+            // Set the link URL
+            const link = document.getElementById("doc-link");
+            link.href = `https://${newDomain}`;
+          </script>
         </div>
       </section>
 

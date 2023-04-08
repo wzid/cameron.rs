@@ -4,7 +4,12 @@ title = "cameron"
 
 <br>
 
-Hi, I'm Cameron. I am a junior at [Liberty University](https://www.liberty.edu) studying Software Engineering. I love to learn new things and teach people about programming. I use this site to host my portfolio along with [documentation](/docs) for some of my projects.
+<p>
+
+Hi, I'm Cameron. I am a junior at [Liberty University](https://www.liberty.edu) studying Software Engineering. I love to learn new things and teach people about programming. I use this site to host my portfolio along with 
+<a id="doc-link" href="">documentation</a> for some of my projects.
+
+</p>
 
 <br>
 
@@ -15,7 +20,6 @@ Hi, I'm Cameron. I am a junior at [Liberty University](https://www.liberty.edu) 
 - Python 🐍
 - Discord Bots (API and Automation)
 - Graphic Design
-</details>
 
 <br>
 
