@@ -7,7 +7,7 @@ title = "cameron"
 <p>
 
 Hi, I'm Cameron. I am a junior at [Liberty University](https://www.liberty.edu) studying Software Engineering. I love to learn new things and teach people about programming. I use this site to host my portfolio along with 
-<a id="doc-link" href="">documentation</a> for some of my projects.
+[documentation](https://docs.cameron.rs) for some of my projects.
 
 </p>
 
