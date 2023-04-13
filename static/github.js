@@ -9,7 +9,7 @@ fetch('https://gh-pinned-repos.egoist.dev/?username=wzid')
         <div id="repo" class="repo">
         <a href="${repo.link}"></a>
           <h4>
-            <span style="color:var(--pink)">
+            <span style="color:var(--text-color);">
               ${repo.repo}
             </span>
             &middot;
