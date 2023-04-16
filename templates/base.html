@@ -1,67 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <title>cameron &middot; software engineer</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/styles.css">
-  <script src="https://kit.fontawesome.com/6029373499.js" crossorigin="anonymous"></script>
-  <meta name="description" content="Hi, I'm Cameron. I am a junior at Liberty University studying Software Engineering.">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WK9TQCY3Z8"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+  {% set image = "https://api.cameron.rs/api/og?title=Hi%20I%27m%20Cameron&last-updated=software%20engineer,%20designer,%20and%20student&bold=true" %}
+  <head>
+    <title>cameron &middot; software engineer</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/6029373499.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta
+      name="description"
+      content="I am an 18 year old software engineering student studying at Liberty University"
+    />
+    <meta name="author" content="Cameron" />
+    <meta property="og:title" content="cameron" />
+    <meta
+      property="og:description"
+      content="I am an 18 year old software engineering student studying at Liberty University"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cameron.rs" />
+    <meta property="og:image" content={{ image }} />
+    <meta property="og:site_name" content="cameron" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content={{ image }} />
+    <meta name="twitter:title" content="cameron" />
+    <meta
+      name="twitter:description"
+      content="I am an 18 year old software engineering student studying at Liberty University"
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>"
+    />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-WK9TQCY3Z8"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'G-WK9TQCY3Z8');
-  </script>
-</head>
+      gtag("config", "G-WK9TQCY3Z8");
+    </script>
+  </head>
 
+  <body>
+    <div id="horizontal-content">
+      <div id="vertical-content">
+        <div class="nav">{% block nav_bar %} {% endblock %}</div>
 
-<body>
-  <div id="horizontal-content">
-    
-    <div id="vertical-content">
-      <div class="nav">
-        {% block nav_bar %}
-        {% endblock %}
-      </div>
+        {% block heading %} {% endblock %}
+        <section class="section" id="main">
+          <div class="container">{% block content %} {% endblock %}</div>
+        </section>
 
-      {% block heading %} {% endblock %}
-      <section class="section" id="main">
-        <div class="container">
-          {% block content %}
-          {% endblock %}
-        </div>
-      </section>
+        <div id="footer">
+          {% block footer %}
+          <div class="icons">
+            <a href="https://github.com/wzid" title="GitHub">
+              <i class="fa-brands fa-github fa-2xl"></i>
+            </a>
 
-      <div id="footer">
-        {% block footer %}
-        <div class="icons">
-          <a href="https://github.com/wzid" title="GitHub">
-            <i class="fa-brands fa-github fa-2xl"></i>
-          </a>
-  
-          <a href="https://www.linkedin.com/in/cameron-k-a00565257" title="LinkedIn">
-            <i class="fa-brands fa-linkedin fa-2xl"></i>
-          </a>
-          <!--
+            <a
+              href="https://www.linkedin.com/in/cameron-k-a00565257"
+              title="LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin fa-2xl"></i>
+            </a>
+            <!--
             <span class="link-separator">&middot;</span>
             --->
-          <a href="mailto:me@cameron.rs" title="Email">
-            <i class="fa-solid fa-envelope fa-2xl"></i>
-          </a>
+            <a href="mailto:me@cameron.rs" title="Email">
+              <i class="fa-solid fa-envelope fa-2xl"></i>
+            </a>
+          </div>
+          <p>
+            (c) Cameron Kauffman 2023
+            <span style="font-weight: bold">&middot; </span
+            ><a
+              href="https://github.com/wzid/cameron.rs"
+              style="text-decoration: underline"
+              >View source</a
+            >
+          </p>
+          {% endblock footer %}
         </div>
-        <p>(c) Cameron Kauffman 2023 <span style="font-weight: bold;">&middot; </span><a href="https://github.com/wzid/cameron.rs" style="text-decoration:underline;">View source</a></p>
-        {% endblock footer %}
       </div>
-
     </div>
-
-  </div>
-</body>
-
+  </body>
 </html>
