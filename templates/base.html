@@ -25,9 +25,12 @@
   <div id="horizontal-content">
     
     <div id="vertical-content">
-      {% block nav_bar %}
-      {% endblock %}
+      <div class="nav">
+        {% block nav_bar %}
+        {% endblock %}
+      </div>
 
+      {% block heading %} {% endblock %}
       <section class="section" id="main">
         <div class="container">
           {% block content %}
@@ -37,20 +40,22 @@
 
       <div id="footer">
         {% block footer %}
-
-        <a href="https://github.com/wzid" title="GitHub">
-          <i class="fa-brands fa-github fa-2xl"></i>
-        </a>
-
-        <a href="https://www.linkedin.com/in/cameron-k-a00565257" title="LinkedIn">
-          <i class="fa-brands fa-linkedin fa-2xl"></i>
-        </a>
-        <!--
-          <span class="link-separator">&middot;</span>
-          --->
-        <a href="mailto:me@cameron.rs" title="Email">
-          <i class="fa-solid fa-envelope fa-2xl"></i>
-        </a>
+        <div class="icons">
+          <a href="https://github.com/wzid" title="GitHub">
+            <i class="fa-brands fa-github fa-2xl"></i>
+          </a>
+  
+          <a href="https://www.linkedin.com/in/cameron-k-a00565257" title="LinkedIn">
+            <i class="fa-brands fa-linkedin fa-2xl"></i>
+          </a>
+          <!--
+            <span class="link-separator">&middot;</span>
+            --->
+          <a href="mailto:me@cameron.rs" title="Email">
+            <i class="fa-solid fa-envelope fa-2xl"></i>
+          </a>
+        </div>
+        <p>(c) Cameron Kauffman 2023 <span style="font-weight: bold;">&middot; </span><a href="https://github.com/wzid/cameron.rs" style="text-decoration:underline;">View source</a></p>
         {% endblock footer %}
       </div>
 

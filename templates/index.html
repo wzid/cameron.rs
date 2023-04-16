@@ -1,10 +1,26 @@
 {% extends "base.html" %}
 
+{% block nav_bar %}
+<div class="nav-bar">
+  <a class="nav-tag" href="https://blog.cameron.rs">
+    Blog
+  </a>
+  <a class="nav-tag" href="https://docs.cameron.rs">
+    Documentation
+  </a>
+</div>
+{% endblock %}
+
+{% block heading %}
+<div class="profile">
+    <div class="title">
+        <h1 > {{ section.title | safe }} </h1>
+        <p> {{ section.description | safe}}</p>
+    </div>
+    <img id="profile-pic" src="/images/pic.jpg">
+</div>
+{% endblock heading %}
+
 {% block content %}
-<h1 class="title">
-    <span>
-        {{ section.title }}
-    </span>
-</h1>
 {{ section.content | safe }}
-{% endblock content %}
+{% endblock heading %}

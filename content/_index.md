@@ -1,40 +1,22 @@
 +++
-title = "cameron"
+title = "Hi, I'm<span>&nbsp;</span><strong emoji=👋>Cameron</strong><span>&nbsp;</span>"
+description = "<span class=attribute>software engineer</span>, <span class=attribute>designer</span>, and <span class=attribute>student</span>"
 +++
 
-<br>
+# About
+I am an **18 year old** software engineering student studying at [Liberty University](https://www.liberty.edu). I love to learn new things and teach people about programming.
 
-<p>
+I use this site to host my portfolio along with [documentation](https://docs.cameron.rs) for some of my projects.
 
-Hi, I'm Cameron. I am a junior at [Liberty University](https://www.liberty.edu) studying Software Engineering. I love to learn new things and teach people about programming. I use this site to host my portfolio along with 
-[documentation](https://docs.cameron.rs) for some of my projects.
+# What I'm up to
+Lately, I have been spending a lot of time with **rust** in personal projects and getting more into low level programming. 
 
-</p>
+I am also getting ready for Fall 2023 when I will be the President of the [Competitive Programming Club](https://lucpc.org)
 
-<br>
+I'm currently looking for **internships**! Feel free to [contact me](mailto:me@cameron.rs).
 
-**Skills**
+# Side Projects
 
-- Java ☕
-- Kotlin 💜
-- Python 🐍
-- Discord Bots (API and Automation)
-- Graphic Design
-
-<br>
-
-**Currently Learning**
-
-- Rust 🦀
-- C++
-- HTML, CSS
-- PHP and SQL
-- [Algorithms](https://leetcode.com/wzid)
-
-</details>
-<br>
-
-## Projects:
-<br>
-<div id="github-data" class="block-data"></div>
-<script src="github.js"></script>
+- [sudoku-solver](https://github.com/wzid/sudoku-solver) is a GUI application that uses bitfields to solve sudoku rather than vectors
+- [stats-on-discord](https://github.com/wzid/stats-on-discord) is a Minecraft plugin that updates an embed in discord to show server-wide statistics
+- [vscode-to-vs](https://github.com/wzid/vscode-to-vs) is a command line tool that creates the file structure needed for a Visual Studio C++ project
