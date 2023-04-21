@@ -30,7 +30,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  font-family: /*-apple-system, BlinkMacSystemFont,*/ segoe ui, Inter, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, segoe ui, Inter, sans-serif;
   color: var(--text-color);
   background-color: var(--background);
   font-size: 1rem;
