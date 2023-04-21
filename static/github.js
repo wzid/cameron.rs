@@ -3,21 +3,23 @@ fetch('https://gh-pinned-repos.egoist.dev/?username=wzid')
   .then(data => {
     const myDataDiv = document.getElementById('github-data');
     let html = '';
-    for (let i = 0; i < data.length; i++) {
+    for (let i = 0; i < 3; i++) {
       const repo = data[i];
       html += `
         <div id="repo" class="repo">
         <a href="${repo.link}"></a>
-          <h4>
+          <h2>
             <span style="color:var(--text-color);">
               ${repo.repo}
             </span>
+            <span>
             &middot;
+            </span>
             <div id="language" style="background-color: ${repo.languageColor}">
               ${repo.language}
             </div>
             ${repo.stars ? `<div id="stars"> ${repo.stars} &#11088 </div>` : ''}
-          </h4>
+          </h2>
           ${repo.description ? `<p>${repo.description}</p>` : ''}
         </div>
       `;

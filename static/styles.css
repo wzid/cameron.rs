@@ -41,7 +41,7 @@ body {
 }
 
 .nav {
-  width: 60%;
+  width: 65%;
   align-self: center;
 }
 
@@ -74,11 +74,34 @@ body {
   text-decoration: none;
 }
 
+#main {
+  background-color: var(--background-lighter);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#horizontal-content {
+  width: 100%;
+  height: 100vh;
+}
+
+#vertical-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 65%;
+  padding: 1rem;
+}
+
 .profile {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 60%;
+  width: 65%;
   transform: translate(-50%, -50%);
   justify-content: space-between;
   align-items: center;
@@ -148,21 +171,16 @@ body {
   border-radius: 50%;
 }
 
-#main {
-  background-color: var(--background-lighter);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
 
-.container {
-  width: 60%;
-  padding: 1rem;
-}
 h1 {
   font-size: 2.25rem;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+h2 {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
 }
 
 li {
@@ -197,16 +215,78 @@ a:hover {
   text-decoration: 1px underline;
 }
 
-#horizontal-content {
-  width: 100%;
-  height: 100vh;
-}
-
-#vertical-content {
-  height: 100%;
+.block-data {
   display: flex;
   flex-direction: column;
 }
+
+
+.repo a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-decoration: none; /* No underlines on the link */
+  z-index: 10; /* Places the link above everything else in the div */
+  background-color: #FFF; /* Fix to make div clickable in IE */
+  opacity: 0; /* Fix to make div clickable in IE */
+  filter: alpha(opacity=1); /* Fix to make div clickable in IE */
+}
+
+
+.repo {
+  position: relative;
+  border-radius: 0.3rem;
+  padding: .5rem 1rem .5rem 1rem;
+  margin-bottom: 1rem;
+  background: var(--background-lightest);
+  border: 1px solid var(--background-lighter);
+  transition: 0.2s;
+  transition-timing-function: ease-out; 
+}
+
+.repo h2 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.repo h2 > *:not(:first-child) {
+  margin-left: .5rem;
+}
+
+.repo:hover {
+  cursor: pointer;
+  border: 1px solid var(--pink);
+}
+
+.repo p {
+  padding-top: .5rem;
+  font-size: .9em;
+  line-height: .5rem;
+}
+
+#stars {
+  color: var(--text-color);
+  margin-left: auto;
+  float: right;
+  font-size: .9rem;
+  font-weight: normal;
+
+}
+
+#language {
+  font-weight: normal;
+  color: var(--text-color);
+  border-radius: 0.25rem;
+  display: inline-block;
+  justify-content: center;
+  font-size: .85rem;
+  padding-left: .25rem;
+  padding-right: .25rem;
+}
+
 
 #footer {
   background-color: var(--background-lightest);
