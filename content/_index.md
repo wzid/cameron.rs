@@ -9,7 +9,7 @@ I am a software engineering student studying at [Liberty University](https://www
 I use this site to host my portfolio along with [documentation](https://docs.cameron.rs) for some of my projects.
 
 # What I'm up to
-Lately, I have been spending a lot of time with **rust** in personal projects and getting more into low level programming. 
+Lately, I have been spending a lot of time with **rust** 🦀 in personal projects and getting more into low level programming. 
 
 I am also getting ready for Fall 2023 when I will be the President of the [Competitive Programming Club](https://lucpc.org)
 
