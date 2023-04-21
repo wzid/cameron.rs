@@ -4,7 +4,7 @@ description = "<span class=attribute>software engineer</span>, <span class=attri
 +++
 
 # About
-I am an **18 year old** software engineering student studying at [Liberty University](https://www.liberty.edu). I love to learn new things and teach people about programming.
+I am a software engineering student studying at [Liberty University](https://www.liberty.edu). I love to learn new things and teach people about programming.
 
 I use this site to host my portfolio along with [documentation](https://docs.cameron.rs) for some of my projects.
 
