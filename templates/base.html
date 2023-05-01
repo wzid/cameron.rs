@@ -55,7 +55,19 @@
   <body>
     <div id="horizontal-content">
       <div id="vertical-content">
-        <div class="nav">{% block nav_bar %} {% endblock %}</div>
+        <nav>
+        <div class="nav-bar">
+          <a class="heading-link" href="https://cameron.rs">
+            <strong>cameron.rs</strong>
+          </a>
+          <div class="links">
+            {% for menu_link in config.extra.menu_links %}
+              {% set link_url = menu_link.url | replace(from="$BASE_URL", to=config.base_url) %}
+              <a {% if current_url and current_url == link_url %}class="active"{% endif %} href="{{ link_url }}">{{menu_link.name}}</a>
+            {% endfor %}
+          </div>
+        </div>
+      </nav>
 
         {% block heading %} {% endblock %}
         <section class="section" id="main">

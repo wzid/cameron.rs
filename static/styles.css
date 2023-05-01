@@ -40,7 +40,7 @@ body {
   background: var(--highlight);
 }
 
-.nav {
+nav {
   width: 60%;
   align-self: center;
 }
@@ -53,13 +53,26 @@ body {
   margin-bottom: calc(100vh - (3rem + 2px));
 }
 
+.heading-link {
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+.links > * {
+  color: var(--text-color);
+}
+
 .links > *:not(:first-child) {
   margin-left: 2rem;
 }
 
-.heading {
-  font-size: 1.5rem;
-  color: var(--text-color);
+a.active:hover {
+  opacity: 60%;
+}
+
+a.active {
+  color: var(--gray);
+  text-decoration: 1px underline;
 }
 
 .nav-tag {
@@ -224,7 +237,7 @@ a:hover {
   flex-direction: column;
   align-items: center;
   padding-top: 2.5rem;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
   position: relative;
 }
 
@@ -269,10 +282,6 @@ a:hover {
   justify-content: end;
 }
 
-.link-separator {
-  font-size: 1.8rem;
-}
-
 @media (max-width: 1550px) {
   .profile {
     flex-direction: column;
@@ -285,12 +294,20 @@ a:hover {
 }
 
 @media (max-width: 1080px) {
-  .nav {
-    width: 100%;
-    padding-right: 1rem;
+  nav {
+    width: 90%;
   }
+
+  .links > *:not(:first-child) {
+    margin-left: 1rem;
+  }
+
   .container {
     width: 100%;
+  }
+
+  body {
+    font-size: 0.95rem;
   }
 
   .title h1 {
