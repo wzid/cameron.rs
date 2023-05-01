@@ -1,12 +1,12 @@
-@import"https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap";
+@import "https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap";
 @font-face {
   font-family: Inter;
   src: url("fonts/inter.woff2") format("woff2");
 }
 
 :root {
-  --orange: #E78A4E;
-  --green: #A9B665;
+  --orange: #e78a4e;
+  --green: #a9b665;
   --pink: #e86a92;
   --celadon: #b3dec1;
   --dark-pink: #de5490;
@@ -14,7 +14,7 @@
   --text-color: #f7f9f7;
   --background: #292729;
   --background-lighter: #3a3639;
-  --background-lightest: #4A454A;
+  --background-lightest: #4a454a;
 }
 
 * {
@@ -33,7 +33,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, segoe ui, Inter, sans-serif;
   color: var(--text-color);
   background-color: var(--background);
-  font-size: 1rem;
+  font-size: 1.15rem;
 }
 
 ::selection {
@@ -46,30 +46,24 @@ body {
 }
 
 .nav-bar {
+  line-height: 2rem;
   display: flex;
-  margin-top: .75rem;
-  justify-content: end;
-  margin-bottom: calc(100vh - (2.75rem + 2px));
+  margin-top: 1rem;
+  justify-content: space-between;
+  margin-bottom: calc(100vh - (3rem + 2px));
 }
 
-
-.nav-bar > *:not(:first-child) {
+.links > *:not(:first-child) {
   margin-left: 2rem;
 }
 
-.nav-tag {
-  padding: .5rem;
-  border-radius: .3rem;
+.heading {
+  font-size: 1.5rem;
   color: var(--text-color);
-  background-color: var(--background-lighter);
-  border: 1px solid var(--background);
 }
 
-.nav-tag:hover {
-  background-color: #3a3639aa;
-  border: 1px solid var(--background-lightest);
-  opacity: 1;
-  text-decoration: none;
+.nav-tag {
+  color: var(--text-color);
 }
 
 .profile {
@@ -92,14 +86,30 @@ body {
 }
 
 @keyframes wave-animation {
-  0% { transform: rotate( 0.0deg) }
-  10% { transform: rotate(14.0deg) } 
-  20% { transform: rotate(-8.0deg) }
-  30% { transform: rotate(14.0deg) }
-  40% { transform: rotate(-4.0deg) }
-  50% { transform: rotate(10.0deg) }
-  60% { transform: rotate( 0.0deg) } 
-  100% { transform: rotate( 0.0deg) }
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .title h1 strong::before {
@@ -107,16 +117,16 @@ body {
   opacity: 0;
   content: attr(emoji);
   position: absolute;
-  margin-left: -.5rem;
+  margin-left: -0.5rem;
   left: 100%;
   color: #fff;
   font-size: 3rem;
 }
 
 .title h1 strong:hover:before {
-  animation-name: wave-animation;  
-  animation-duration: 2.5s;        
-  animation-iteration-count: infinite;  
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
   opacity: 1;
   margin-left: 1.25rem;
 }
@@ -137,7 +147,7 @@ body {
 }
 
 .attribute:hover {
-  color: #A6A0A6;
+  color: #a6a0a6;
   cursor: default;
 }
 
@@ -192,7 +202,7 @@ ul {
 
 a:hover {
   opacity: 60%;
-  text-decoration: 1px underline;
+  text-decoration: 1px dotted underline;
 }
 
 #horizontal-content {
@@ -214,12 +224,16 @@ a:hover {
   flex-direction: column;
   align-items: center;
   padding-top: 2.5rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: .5rem;
   position: relative;
 }
 
 #footer p {
   font-size: 1rem;
+}
+
+#footer .icons {
+  padding-bottom: 1.5rem;
 }
 
 #footer .icons > a {
@@ -238,23 +252,21 @@ a:hover {
   opacity: 0;
   content: attr(title);
   position: absolute;
-  top: -1.5rem;
+  top: -1.4rem;
   left: 50%;
   transform: translateX(-50%);
   color: #fff;
-  font-size: .75rem;
+  font-size: 0.75rem;
   white-space: nowrap;
 }
 
 #footer .icons a:hover:before {
   opacity: 1;
-  top: -1.85rem;
+  top: -2rem;
 }
 
 #footer > *:not(:first-child) {
-  padding-top: 1rem;
   justify-content: end;
-  padding-bottom: 0;
 }
 
 .link-separator {
@@ -292,5 +304,4 @@ a:hover {
   #profile-pic {
     width: 65%;
   }
-
 }
