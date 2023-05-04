@@ -24,10 +24,10 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://cameron.rs" />
     <meta property="og:image" content={{ image }} />
-    <meta property="og:site_name" content="cameron" />
+    <meta property="og:site_name" content="cameron.rs" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content={{ image }} />
-    <meta name="twitter:title" content="cameron" />
+    <meta name="twitter:title" content="cameron.rs" />
     <meta
       name="twitter:description"
       content="I am an 18 year old software engineering student studying at Liberty University"
@@ -56,7 +56,6 @@
     <div id="horizontal-content">
       <div id="vertical-content">
         <nav>
-        <div class="nav-bar">
           <a class="heading-link" href="https://cameron.rs">
             <strong>cameron.rs</strong>
           </a>
@@ -66,8 +65,7 @@
               <a {% if current_url and current_url == link_url %}class="active"{% endif %} href="{{ link_url }}">{{menu_link.name}}</a>
             {% endfor %}
           </div>
-        </div>
-      </nav>
+        </nav>
 
         {% block heading %} {% endblock %}
         <section class="section" id="main">

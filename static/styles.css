@@ -1,4 +1,5 @@
 @import "https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap";
+@import url(nav.css);
 @font-face {
   font-family: Inter;
   src: url("fonts/inter.woff2") format("woff2");
@@ -38,45 +39,6 @@ body {
 
 ::selection {
   background: var(--highlight);
-}
-
-nav {
-  width: 60%;
-  align-self: center;
-}
-
-.nav-bar {
-  line-height: 2rem;
-  display: flex;
-  margin-top: 1rem;
-  justify-content: space-between;
-  margin-bottom: calc(100vh - (3rem + 2px));
-}
-
-.heading-link {
-  font-size: 1.5rem;
-  color: var(--text-color);
-}
-
-.links > * {
-  color: var(--text-color);
-}
-
-.links > *:not(:first-child) {
-  margin-left: 2rem;
-}
-
-a.active:hover {
-  opacity: 60%;
-}
-
-a.active {
-  color: var(--gray);
-  text-decoration: 1px underline;
-}
-
-.nav-tag {
-  color: var(--text-color);
 }
 
 .profile {
@@ -294,14 +256,6 @@ a:hover {
 }
 
 @media (max-width: 1080px) {
-  nav {
-    width: 90%;
-  }
-
-  .links > *:not(:first-child) {
-    margin-left: 1rem;
-  }
-
   .container {
     width: 100%;
   }

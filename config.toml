@@ -17,5 +17,6 @@ highlight_theme = "gruvbox-dark"
 # Put all your custom variables here
 menu_links = [
     { url = "https://blog.cameron.rs", name = "Blog" },
+    { url = "https://projects.cameron.rs", name = "Projects" },
     { url = "https://docs.cameron.rs", name = "Documentation" },
 ]

@@ -1,0 +1,48 @@
+nav {
+  width: 60%;
+  align-self: center;
+  line-height: 2rem;
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-between;
+  margin-bottom: calc(100vh - (3rem + 2px));
+}
+
+.heading-link {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--text-important);
+}
+
+.links > * {
+  text-decoration: none;
+  color: var(--text-important);
+}
+
+.links > *:not(:first-child) {
+  margin-left: 2rem;
+}
+
+a.active:hover {
+  opacity: 60%;
+}
+
+a.active {
+  color: var(--gray);
+  text-decoration: 1px underline;
+}
+
+@media (max-width: 840px) {
+  nav {
+    width: 90%;
+    flex-direction: column;
+  }
+  .links {
+    font-size: 0.95rem;
+    display: inline;
+  }
+
+  .links > *:not(:first-child) {
+    margin-left: 0.5rem;
+  }
+}
