@@ -1,0 +1,34 @@
+// Note: the following css is input into tailwindcss and will end up in style.css when the site is built (i.e. it'll be in ./public)
+@tailwind base;
+@layer base {
+    body {
+      @apply font-sans h-screen text-text_color bg-background dark:bg-text_color dark:text-background;
+    }
+    b, strong {
+      @apply font-bold;
+    }
+}  
+
+@tailwind components;
+
+@import './markdown.scss';
+
+@tailwind utilities;
+
+
+
+.tag-button {
+  @apply badge text-base badge-primary h-6 hover:bg-primary-focus;
+}
+
+.badge-ghost {
+  @apply bg-base-300 text-base-content;
+}
+
+.tag {
+  @apply badge badge-ghost;
+}
+
+.tag-lg {
+  @apply badge text-lg h-6 badge-ghost;
+}

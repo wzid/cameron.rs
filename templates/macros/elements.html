@@ -1,0 +1,53 @@
+{% macro navbar() %}
+<container class="flex justify-center w-full">
+  <nav class="navbar lg:w-5/6">
+    <div class="flex-1">
+      <a class="btn btn-ghost normal-case text-2xl font-bold" href="https://cameron.rs">
+        <span>cameron</span>
+        <span class="text-secondary dark:text-primary">.rs</span>
+      </a>
+    </div>
+    <div class="hidden md:flex flex-none text-lg">
+      <ul class="menu menu-horizontal px-1">
+        {% for menu_link in config.extra.menu_links %}
+          {% set link_url = menu_link.url | replace(from="$BASE_URL", to=config.base_url) %}
+            <li><a href="{{ link_url }}">{{menu_link.name}}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="dropdown dropdown-bottom dropdown-end md:hidden flex-none text-xl">
+      <label tabindex="0" class="btn btn-ghost btn-circle">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+          {% for menu_link in config.extra.menu_links %}
+          {% set link_url = menu_link.url | replace(from="$BASE_URL", to=config.base_url) %}
+            <li><a href="{{ link_url }}">{{menu_link.name}}</a></li>
+          {% endfor %}
+      </ul>
+    </div>
+  </nav>
+</container>
+{% endmacro navbar %}
+
+
+{% macro footer() %}
+<div class="flex w-full mt-auto bg-base-300 justify-center">
+  <footer class="footer lg:w-5/6 items-center p-4 text-accent">
+    <p>
+      {{ config.title | safe }} © {{ now() | date(format="%Y") }}<br>
+    </p>
+    <div class="text-2xl grid-flow-col gap-5 md:place-self-center md:justify-self-end">
+      <a class="link" href="{{ config.extra.github }}">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a class="link" href="{{ config.extra.linkedin }}">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a class="link" href="mailto:{{ config.extra.email }}">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+    </div>
+  </footer>
+</div>
+{% endmacro footer %}

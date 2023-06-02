@@ -1,31 +1,37 @@
 {% extends "base.html" %}
 
-{% block nav_bar %}
-<div class="nav-bar">
-  <a class="heading-link" href="https://cameron.rs">
-    <strong>cameron.rs</strong>
-  </a>
-  <div class="links">
-    <a class="nav-tag" href="https://blog.cameron.rs">
-      Blog
+{% block content %}
+  <div class="flex flex-col">
+    <h1 class="font-bold text-6xl md:text-7xl">{{ section.title | safe }}</h1>
+    <h2 class="pt-1 text-2xl text-accent">{{ section.description | safe}}</h2>
+  </div>
+
+
+  <div class="pt-7 flex flex-row flex-wrap gap-3 md:gap-5">
+    <a href="https://projects.cameron.rs" class="btn btn-secondary dark:btn-primary gap-2 normal-case text-lg">
+      <i class="fa-solid fa-book-bookmark"></i>
+      <span>See my web projects!</span>
     </a>
-    <a class="nav-tag" href="https://docs.cameron.rs">
-      Documentation
+    <a href="https://blog.cameron.rs" class="btn btn-secondary dark:btn-primary gap-2 normal-case text-lg">
+      <i class="fa-solid fa-newspaper"></i>
+      <span>Check out my blog!</span>
     </a>
   </div>
-</div>
-{% endblock %}
 
-{% block heading %}
-<div class="profile">
-    <div class="title">
-        <h1 > {{ section.title | safe }} </h1>
-        <p> {{ section.description | safe}}</p>
-    </div>
-    <img id="profile-pic" src="/images/pic.jpg">
-</div>
-{% endblock heading %}
-
-{% block content %}
-{{ section.content | safe }}
+  
+  <div class="markdown-content">
+    {{ section.content | safe }}
+  </div>
+  <h1 class="text-4xl lg:text-[2.5rem] lg:leading-loose font-bold leading-loose">Projects</h1>
+  <div class="flex flex-wrap gap-4">
+    {% for project in config.extra.projects %}
+      <a href="{{ project.url }}" class="btn btn-outline dark:btn-error shrink md:shrink-0 normal-case h-fit flex flex-col items-start text-start p-4">
+        <div class="flex items-center gap-3 pb-2 dark:text-error-content">
+          <h3 class="font-bold text-2xl">{{ project.name }}</h3>
+          <span class="text-neutral leading-none rounded-lg p-1" style="background:{{project.color}};" >{{ project.lang }}</span>
+        </div>
+        <p class="font-normal dark:text-error-content leading-snug">{{ project.description }}</p>
+      </a>
+    {% endfor %}
+  </div>
 {% endblock heading %}

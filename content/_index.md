@@ -1,24 +1,13 @@
 +++
-title = "Hi, I'm<span>&nbsp;</span><strong emoji=👋>Cameron</strong><span>&nbsp;</span>"
+title = "Hi, I'm Cameron 🚀"
 description = "<span class=attribute>software engineer</span>, <span class=attribute>designer</span>, and <span class=attribute>student</span>"
 +++
 
-# About
-
-I am a software engineering student studying at [Liberty University](https://www.liberty.edu). I love to learn new things and teach people about programming.
-
-I use this site to host my portfolio along with [documentation](https://docs.cameron.rs) for some of my projects.
-
+I'm a software engineering student at Liberty University. I enjoy **low level programming**, **web development**, and **graphic design**.
 # What I'm up to
 
-Currently I am working for [IPConfigure](https://ipconfigure.com) as a software engineering intern using **Java**!
+Currently I am working for [IPConfigure](https://ipconfigure.com) as a **software engineering intern** using **Java**!
 
-Lately, I have been spending a lot of time with **rust** 🦀 in personal projects and getting more into low level programming.
+Lately, I've spent a lot of time with **web development**. I recently re-designed _this_ website to start using **TailwindCSS** and **daisyUI**.
 
-I am also getting ready for Fall 2023 when I will be the President of the [Competitive Programming Club](https://lucpc.org)
-
-# Side Projects
-
-- [sudoku-solver](https://github.com/wzid/sudoku-solver) is a GUI application that uses bitfields to solve sudoku rather than vectors.
-- [stats-on-discord](https://github.com/wzid/stats-on-discord) is a Minecraft plugin that updates an embed in discord to show server-wide statistics
-- [vscode-to-vs](https://github.com/wzid/vscode-to-vs) is a command line tool that creates the file structure needed for a Visual Studio C++ project
+I am getting ready for Fall 2023 when I will start my first year as the **President** of the [Competitive Programming Club](https://lucpc.org).

@@ -1,0 +1,31 @@
+.markdown-content {
+  @apply flex flex-col pt-4 md:pt-8;
+}
+
+.markdown-content p {
+  @apply text-lg md:text-xl;
+}
+
+.markdown-content p + p {
+  @apply mt-2;
+}
+
+.markdown-content span + p {
+  @apply mt-4;
+}
+
+.markdown-content h1 {
+  @apply text-4xl lg:text-[2.5rem] lg:leading-loose font-bold leading-loose;
+}
+
+.markdown-content h2 {
+  @apply text-3xl font-bold leading-loose;
+}
+
+.markdown-content a {
+  @apply link-secondary dark:link-primary;
+}
+
+.markdown-content p code {
+  @apply text-lg bg-base-200 px-[.35rem] py-[.15rem] rounded-md;
+}
