@@ -2,7 +2,7 @@
 <container class="flex justify-center w-full">
   <nav class="navbar lg:w-5/6">
     <div class="flex-1">
-      <a class="btn btn-ghost normal-case text-2xl font-bold" href="https://cameron.rs">
+      <a class="btn btn-ghost normal-case text-xl md:text-2xl font-bold" href="https://cameron.rs">
         <span>cameron</span>
         <span class="text-primary">.rs</span>
       </a>
@@ -19,7 +19,7 @@
       <label tabindex="0" class="btn btn-ghost btn-circle">
         <i class="fa-solid fa-bars"></i>
       </label>
-      <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+      <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow-md bg-base-300 rounded-box w-52">
           {% for menu_link in config.extra.menu_links %}
           {% set link_url = menu_link.url | replace(from="$BASE_URL", to=config.base_url) %}
             <li><a href="{{ link_url }}">{{menu_link.name}}</a></li>

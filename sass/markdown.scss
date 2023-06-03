@@ -3,7 +3,7 @@
 }
 
 .markdown-content p {
-  @apply text-lg md:text-xl;
+  @apply text-base md:text-lg lg:text-xl;
 }
 
 .markdown-content p + p {
@@ -15,11 +15,11 @@
 }
 
 .markdown-content h1 {
-  @apply text-4xl lg:text-[2.5rem] lg:leading-loose font-bold leading-loose;
+  @apply text-3xl md:text-4xl lg:text-[2.5rem] lg:leading-loose font-bold leading-loose;
 }
 
 .markdown-content h2 {
-  @apply text-3xl font-bold leading-loose;
+  @apply text-xl md:text-2xl lg:text-3xl font-bold leading-loose;
 }
 
 .markdown-content a {
