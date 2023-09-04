@@ -8,20 +8,20 @@ module.exports = {
         mytheme: {
           primary: "#0072B5",
           secondary: "#e86a92",
-          neutral: "#292929",
+          neutral: "#171717",
           "base-100": "#f7f7f7",
           accent: "#737373",
-          error: "#C8C8C8",
+          error: "#e8e8e8",
         },
       },
       {
         mydarktheme: {
-          primary: "#e86a92",
-          secondary: "#0072B5",
-          neutral: "#f7f7f7",
-          "base-100": "#282729",
+          primary: "#0072B5",
+          secondary: "#e86a92",
+          neutral: "#D4D4D4",
+          "base-100": "#171717",
           accent: "#737373",
-          error: "#202021",
+          error: "#202020",
         },
       },
     ],
@@ -29,11 +29,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Source Sans Pro", "Segoe UI", "sans-serif"],
-      },
-      colors: {
-        text_color: "#282729",
-        background: "#f7f9f7",
+        sans: ["'Source Sans 3'", "'Segoe UI'", "sans-serif"],
       },
     },
   },

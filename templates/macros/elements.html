@@ -32,19 +32,19 @@
 
 
 {% macro footer() %}
-<div class="flex w-full mt-auto bg-base-300 justify-center">
+<div class="flex w-full mt-auto bg-error justify-center">
   <footer class="footer lg:w-5/6 items-center p-4 text-accent">
     <p>
       {{ config.title | safe }} © {{ now() | date(format="%Y") }}<br>
     </p>
     <div class="text-2xl grid-flow-col gap-5 md:place-self-center md:justify-self-end">
-      <a class="link" href="{{ config.extra.github }}">
+      <a class="link-accent" href="{{ config.extra.github }}">
         <i class="fa-brands fa-github"></i>
       </a>
-      <a class="link" href="{{ config.extra.linkedin }}">
+      <a class="link-accent" href="{{ config.extra.linkedin }}">
         <i class="fa-brands fa-linkedin"></i>
       </a>
-      <a class="link" href="mailto:{{ config.extra.email }}">
+      <a class="link-accent" href="mailto:{{ config.extra.email }}">
         <i class="fa-solid fa-envelope"></i>
       </a>
     </div>
