@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700;800&display=swap');
+
+@font-face {
+  font-family: 'Livory';
+  src: url('livoryitalic.otf');
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Livory';
+  src: url('livorybolditalic.otf');
+  font-style: italic;
+  font-weight: bold;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+@layer base {
+  body {
+    @apply bg-neutral-100 text-neutral-900 dark:bg-neutral-900 dark:text-neutral-100 py-12 sm:py-24 md:pt-32 sm:pb-12;
+  }
+  i {
+    @apply font-serif text-[105%] leading-[100%];
+  }
+  .mono {
+    @apply font-mono text-[85%] leading-[100%];
+  }
+}
+
+@layer components {
+  .layout-md {
+    @apply max-w-screen-md mx-auto px-4 sm:px-6;
+  }
+}
+
+html {
+  @apply motion-safe:scroll-smooth;
+}
+
+.link {
+  @apply underline underline-offset-[3px] decoration-neutral-400 dark:decoration-neutral-500;
+  @apply hover:text-black hover:decoration-black transition-colors;
+  @apply dark:hover:text-white dark:hover:decoration-white;
+}
+
+
+::selection {
+  @apply bg-neutral-200 dark:bg-neutral-500;
+}
+
+h1 {
+  @apply text-3xl font-bold my-3;
+}
