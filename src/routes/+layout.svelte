@@ -7,7 +7,7 @@
 
 <Header />
 
-<main>
+<main class="pt-8">
     <slot />
 </main>
 

@@ -1,27 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700;800&display=swap');
 
-@font-face {
-  font-family: 'Livory';
-  src: url('livoryitalic.otf');
-  font-style: italic;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: 'Livory';
-  src: url('livorybolditalic.otf');
-  font-style: italic;
-  font-weight: bold;
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
+
 @layer base {
   body {
-    @apply bg-neutral-100 text-neutral-900 dark:bg-neutral-900 dark:text-neutral-100 py-12 sm:py-24 md:pt-32 sm:pb-12;
+    @apply bg-neutral-100 text-neutral-900 dark:bg-neutral-900 dark:text-[#D4D4D4];
+    @apply pt-2 sm:pb-12;
   }
+
+  bi {
+    @apply font-livory italic font-bold text-[105%] leading-[100%] text-white;
+  }
+  
+  b {
+    @apply text-white;
+  }
+
   i {
     @apply font-livory text-[105%] leading-[100%];
   }
@@ -32,7 +28,7 @@
 
 @layer components {
   .layout-md {
-    @apply max-w-screen-md mx-auto px-4 sm:px-6;
+    @apply max-w-screen-md mx-auto px-4 sm:px-2;
   }
 }
 
@@ -41,7 +37,7 @@ html {
 }
 
 .link {
-  @apply underline underline-offset-[3px] decoration-neutral-400 dark:decoration-neutral-500;
+  @apply text-white underline underline-offset-[3px] decoration-neutral-400 dark:decoration-neutral-500;
   @apply hover:text-black hover:decoration-black transition-colors;
   @apply dark:hover:text-white dark:hover:decoration-white;
 }
@@ -52,5 +48,14 @@ html {
 }
 
 h1 {
-  @apply text-3xl font-bold my-3;
+  @apply text-3xl font-bold my-2 text-white;
+}
+
+h2 {
+  @apply text-2xl font-semibold my-1 text-white;
+}
+
+
+.dark-accent {
+  @apply border-[#27272A]
 }

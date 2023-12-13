@@ -1,4 +1,4 @@
-<div class="layout-md mt-4 space-y-3">
+<div class="layout-md mt-4 space-y-3 text-neutral-300">
     <div class="resume-section">
         <h2>Education</h2>
         <div class="resume-content space-y-1">
@@ -138,15 +138,15 @@
 
 <style lang="postcss">
     .resume-section h2 {
-        @apply font-serif text-2xl border-b-[1px];
+        @apply font-serif text-2xl border-b-[1px] text-white;
     }
     .resume-section .resume-content {
         @apply px-4 py-3;
     }
     .resume-heading {
-        @apply font-serif text-xl font-bold;
+        @apply font-serif text-xl font-bold text-white;
     }
     .spread {
-        @apply flex justify-between font-serif;
+        @apply flex justify-between font-serif text-white;
     }
 </style>
