@@ -42,11 +42,11 @@
 </script>
 
 <div class="layout-md pb-6">
-    <h1 class="text-5xl my-0">Hi, I'm Cameron 🚀</h1>
+    <h1 class="text-4xl sm:text-5xl my-0">Hi, I'm Cameron 🚀</h1>
     <p class="text-lg text-neutral-500">software engineer, designer, and student</p>
 </div>
 
-<div class=" layout-md text-xl space-y-12">
+<div class="layout-md text-xl space-y-12">
     <div class="space-y-6">
         <p>
             I do all sorts of programming in my free time. You are currently looking at my website that I built with <b>SvelteKit</b> and <b>TailwindCSS</b>.
@@ -70,7 +70,7 @@
     </div>
     <div>
         <h2 class="mb-6">My notable projects:</h2>
-        <div class="grid grid-cols-3 gap-2">
+        <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-2">
             {#each projects as project }
                 <a href={project.href} class="flex flex-col justify-between p-6 rounded-lg bg-neutral-800 transition-all hover:bg-[#333333] shadow-md">
                     <div class="flex flex-col gap-y-2">

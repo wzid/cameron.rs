@@ -24,16 +24,16 @@
     data-sveltekit-preload-code="eager"
 >
     <div class="layout-md py-1 flex justify-between items-center border-b border-neutral-700">
-        <bi class="my-2 text-2xl">
+        <bi class="my-2 text-xl sm:text-2xl">
             <a href="/">Cameron Kauffman</a>
             {#if page_title}
                 <span class="font-normal text-neutral-200">
-                    <span class="text-neutral-500">—</span>
+                    <span class="text-neutral-500 hidden sm:inline">—</span>
                     {page_title}
                 </span>
             {/if}
         </bi>
-        <nav class="flex items-start text-neutral-500 justify-end space-x-6 text-lg py-0.5">
+        <nav class="flex items-start text-neutral-500 justify-end space-x-4 sm:space-x-6 text-lg py-0.5">
             {#each links as link (link)}
                 <a
                     href={link.href}
