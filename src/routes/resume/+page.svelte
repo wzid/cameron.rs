@@ -1,4 +1,4 @@
-<div class="layout-md mt-4 space-y-3 text-neutral-300">
+<div class="mt-4 space-y-3 text-neutral-300 text-lg">
     <div class="resume-section">
         <h2>Education</h2>
         <div class="resume-content space-y-1">

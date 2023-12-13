@@ -3,13 +3,13 @@
     
     const links = [
         { name: "writing", href: "/blog" },
-        { name: "webasm", href: "/projects" },
-        { name: "resume", href: "/resume/" },
+        { name: "webasm", href: "https://projects.cameron.rs" },
+        { name: "resume", href: "/resume" },
     ]
 
     let page_title: string | null = null;
     $: {
-        const link = links.find(({ href }) => href === $page.url.pathname);
+        const link = links.find(({ href }) => href.slice(1) === $page.url.pathname.split("/")[1]);
         if (link) {
             page_title = link.name.charAt(0).toUpperCase() + link.name.slice(1);
         } else {
@@ -23,7 +23,7 @@
     data-sveltekit-noscroll 
     data-sveltekit-preload-code="eager"
 >
-    <div class="layout-md flex justify-between items-center border-b border-neutral-700">
+    <div class="layout-md py-1 flex justify-between items-center border-b border-neutral-700">
         <bi class="my-2 text-2xl">
             <a href="/">Cameron Kauffman</a>
             {#if page_title}
@@ -38,8 +38,8 @@
                 <a
                     href={link.href}
                     class="hover:dark:text-neutral-100 hover:text-neutral-900 transition-colors"
-                    class:dark:text-white={$page.url.pathname === link.href}
-                    class:text-black={$page.url.pathname === link.href}
+                    class:dark:text-white={$page.url.pathname.split("/")[1] === link.href.slice(1)}
+                    class:text-black={$page.url.pathname.split("/")[1] === link.href.slice(1)}
                 >
                     {link.name}
                 </a>

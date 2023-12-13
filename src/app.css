@@ -5,9 +5,14 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+    scrollbar-color: #545454 #262626;
+  }
   body {
     @apply bg-neutral-100 text-neutral-900 dark:bg-neutral-900 dark:text-[#D4D4D4];
-    @apply pt-2 sm:pb-12;
+    @apply sm:pb-12;
   }
 
   bi {
@@ -24,12 +29,11 @@
   .mono {
     @apply font-mono text-[85%] leading-[100%];
   }
+  
 }
 
-@layer components {
-  .layout-md {
-    @apply max-w-screen-md mx-auto px-4 sm:px-2;
-  }
+.layout-md {
+  @apply max-w-screen-md mx-auto px-4 sm:px-2
 }
 
 html {
@@ -42,9 +46,14 @@ html {
   @apply dark:hover:text-white dark:hover:decoration-white;
 }
 
+.link-hidden {
+  @apply text-white hover:underline underline-offset-[3px] decoration-neutral-400 dark:decoration-neutral-500;
+  @apply hover:text-black hover:decoration-black transition-colors;
+  @apply dark:hover:text-white dark:hover:decoration-white;
+}
 
 ::selection {
-  @apply bg-neutral-200 dark:bg-neutral-500;
+  @apply bg-neutral-200 dark:bg-neutral-600;
 }
 
 h1 {

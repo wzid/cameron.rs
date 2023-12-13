@@ -1,0 +1,21 @@
+.markdown h1 {
+    @apply pt-6 pb-2;
+}
+
+.markdown p + p {
+    @apply pt-6;
+}
+
+.markdown b, strong {
+    @apply !text-white;
+}
+
+.markdown p a {
+    @apply text-white !underline underline-offset-[3px] decoration-neutral-400 dark:decoration-neutral-500;
+    @apply hover:text-black hover:decoration-black transition-colors;
+    @apply dark:hover:text-white dark:hover:decoration-white;
+}
+
+.markdown img {
+    @apply mx-auto
+}

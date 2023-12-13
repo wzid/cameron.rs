@@ -1,29 +1,26 @@
 <script lang="ts">
-    import { Github, Twitter, Linkedin } from "lucide-svelte";  
-    const icon_size = 24;  
+    import Icon from '@iconify/svelte';
+    const icon_size = 24;
 </script>
 
-<div class="layout-md mt-20">
+<div class="mt-20">
     <div class="flex flex-col gap-6 items-center justify-center">
-        <div class="flex gap-6">
-            <a href="https://github.com/wzid" class="social-circle" target="_blank">
-                <Github size={icon_size} class="text-neutral-400" />
+        <div class="flex gap-6 text-white">
+            <a href="https://github.com/wzid" target="_blank">
+                <Icon icon="mdi:github" width={icon_size} height={icon_size} class="transition-all hover:brightness-[.80]" />
             </a>
-            <a href="https://x.com/cameronkffn" class="social-circle" target="_blank">
-                <Twitter size={icon_size} class="text-neutral-400" />
+            <a href="https://x.com/cameronkffn" target="_blank">
+                <Icon icon="simple-icons:x" width={icon_size-4} height={icon_size} class="transition-all hover:brightness-[.80]" />
             </a>
-            <a href="https://linkedin.com/in/cameronkffn" class="social-circle" target="_blank">
-                <Linkedin size={icon_size} class="text-neutral-400" />
+            <a href="mailto:me@cameron.rs" target="_blank">
+                <Icon icon="mdi:email" width={icon_size} height={icon_size} class="transition-all hover:brightness-[.80]" />
+            </a>
+            <a href="https://linkedin.com/in/cameronkffn" target="_blank">
+                <Icon icon="devicon:linkedin" width={icon_size} height={icon_size} class="transition-all hover:brightness-[.80]" />
             </a>
         </div>
-        <p class="text-neutral-400">
-            cameron - software engineer © 2023
+        <p class="text-neutral-400 text-sm">
+            cameron © 2023
         </p>
     </div>
 </div>
-
-<style lang="postcss">
-    .social-circle {
-        @apply dark:bg-neutral-700 rounded-full p-[.625rem] hover:bg-neutral-500 transition-colors;
-    }
-</style>
