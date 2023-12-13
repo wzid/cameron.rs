@@ -23,7 +23,7 @@
 
 <p class=" layout-md text-xl text-neutral-400 mb-16">
     is a <span class="font-semibold text-black dark:text-white mono">software engineer</span>, <br />
-    <span class="font-semibold text-black dark:text-white">student</span>, and <span class="font-livory font-semibold text-black dark:text-white">designer</span>.
+    <span class="font-semibold text-black dark:text-white">student</span>, and <span class="font-serif font-semibold text-black dark:text-white">designer</span>.
 </p>
 
 <div class="layout-md text-lg space-y-12">

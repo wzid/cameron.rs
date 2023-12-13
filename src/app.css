@@ -23,7 +23,7 @@
     @apply bg-neutral-100 text-neutral-900 dark:bg-neutral-900 dark:text-neutral-100 py-12 sm:py-24 md:pt-32 sm:pb-12;
   }
   i {
-    @apply font-serif text-[105%] leading-[100%];
+    @apply font-livory text-[105%] leading-[100%];
   }
   .mono {
     @apply font-mono text-[85%] leading-[100%];
