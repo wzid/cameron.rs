@@ -1,4 +1,4 @@
-<div class="mt-4 space-y-3 text-neutral-300 text-lg">
+<div class="mt-4 space-y-3 text-neutral-300 sm:text-lg">
     <div class="resume-section">
         <h2>Education</h2>
         <div class="resume-content space-y-1">
@@ -11,7 +11,7 @@
                     Bachelor of Science in Computer Science<br/>
                     Minor in Mathematics
                 </i>
-                <i>Aug. 2022 - May 2026</i>
+                <i class="text-end">Aug. 2022 - May 2026</i>
             </div>
             <p>GPA: <b>3.7</b></p>
         </div>

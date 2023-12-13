@@ -29,7 +29,9 @@
             {#if page_title}
                 <span class="font-normal text-neutral-200">
                     <span class="text-neutral-500 hidden sm:inline">—</span>
-                    {page_title}
+                    <p class="sm:inline">
+                        {page_title}
+                    </p>
                 </span>
             {/if}
         </bi>

@@ -41,12 +41,12 @@
     ]
 </script>
 
-<div class="layout-md pb-6">
+<div class="pb-6">
     <h1 class="text-4xl sm:text-5xl my-0">Hi, I'm Cameron 🚀</h1>
     <p class="text-lg text-neutral-500">software engineer, designer, and student</p>
 </div>
 
-<div class="layout-md text-xl space-y-12">
+<div class="text-xl space-y-12">
     <div class="space-y-6">
         <p>
             I do all sorts of programming in my free time. You are currently looking at my website that I built with <b>SvelteKit</b> and <b>TailwindCSS</b>.
