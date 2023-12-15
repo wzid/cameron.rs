@@ -17,3 +17,16 @@ export const fetchMarkdownPosts = async () => {
 
 	return allPosts;
 };
+
+export function timeAgo(dateInput) {
+    const date = new Date(dateInput);
+    const now = new Date();
+    const months = (now.getFullYear() - date.getFullYear()) * 12 + (now.getMonth() - date.getMonth());
+    const years = Math.floor(months / 12);
+
+    if (years > 0) {
+        return years === 1 ? `${years} year ago` : `${years} years ago`;
+    } else {
+        return months === 1 ? `${months} month ago` : `${months} months ago`;
+    }
+}

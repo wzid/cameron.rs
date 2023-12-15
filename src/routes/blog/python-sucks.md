@@ -1,7 +1,12 @@
 ---
 title: Python sucks, and why I use it
 date: '7-9-2023'
-desc: Python is very slow to run but very fast to develop in.
+desc: Python is very slow to run but very fast to develop in. In this article, I discuss my experience with Python and why I use it despite its flaws.
+tags:
+    - python
+    - programming
+    - rust
+    - c++
 ---
 
 Recently I was contracted to work on a Discord bot written in Python. I'm no pythonista but I partake in some kool-aid now and then. Python boasts a lot of features like subpar performance, lack of static typing, forced indentation and random syntactic quirks. These features would normally push me to a more respectable language, but this time I did not have a choice.

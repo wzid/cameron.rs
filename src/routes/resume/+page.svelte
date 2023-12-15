@@ -1,4 +1,16 @@
-<div class="mt-4 space-y-3 text-neutral-300 sm:text-lg">
+<svelte:head>
+    <title>resume</title>
+    <meta name="description" content="My personal website where you can learn about me, see my resume, and some stuff that I've written" />
+    <meta name="og:title" content="Cameron Kauffman - Resume" />
+    <meta name="og:description" content="My personal website where you can learn about me, see my resume, and some stuff that I've written" />
+    <meta name="og:type" content="website" />
+    <meta name="og:url" content="https://cameron.rs" />
+    <meta name="og:site_name" content="cameron.rs"/>
+    <meta name="twitter:title" content="Cameron Kauffman - Resume" />
+    <meta name="twitter:description" content="My personal website where you can learn about me, see my resume, and some stuff that I've written" />
+</svelte:head>
+
+<div class="mt-4 space-y-3 text-neutral-700 dark:text-neutral-300 sm:text-lg">
     <div class="resume-section">
         <h2>Education</h2>
         <div class="resume-content space-y-1">
@@ -39,7 +51,7 @@
             <div class="space-y-1">
                 <div class="spread">
                     <h3 class="resume-heading">Club President</h3>
-                    <p>May 2023 - Present</p>
+                    <p class="text-end">May 2023 - Present</p>
                 </div>
                 <div class="spread">
                     <i>Competitive Programming Club</i>
@@ -57,7 +69,7 @@
             <div class="space-y-1">
                 <div class="spread">
                     <b class="text-xl">Java Engineering Intern</b>
-                    <p>May 2023 - Aug 2023</p>
+                    <p class="text-end">May 2023 - Aug 2023</p>
                 </div>
                 <div class="spread">
                     <i>IPConfigure Inc.</i>
@@ -75,11 +87,11 @@
             <div class="space-y-1">
                 <div class="spread">
                     <b class="text-xl">Full Stack Developer</b>
-                    <p>July 2023 - September 2023</p>
+                    <p class="text-end">July 2023 - September 2023</p>
                 </div>
                 <div class="spread">
                     <i>Pypup Inc.</i>
-                    <i>pypup.com</i>
+                    <i class="text-end">pypup.com</i>
                 </div>
                 <ul class="list-disc list-inside pl-3 pt-1">
                     <li>Redesigned the front-end of the website using Angular and Tailwind CSS</li>
@@ -98,7 +110,7 @@
                         <b class="text-lg">Programming Club Website - lucpc.org</b><br/>
                         <i>Next.js, Tailwind CSS, Google Firebase</i>
                     </p>
-                    <p>May 2023</p>
+                    <p class="text-end">May 2023</p>
                 </div>
                 <ul class="list-disc list-inside pl-3 pt-1">
                     <li>Club members are able to compete against one another through our competition page where we upload weekly problems</li>
@@ -111,7 +123,7 @@
                     <p>
                         <b class="text-lg">Sudoku Solver </b> | <i>Rust</i>
                     </p>
-                    <p>March 2023</p>
+                    <p class="text-end">March 2023</p>
                 </div>
                 <ul class="list-disc list-inside pl-3 pt-1">
                     <li>Developed a program to solve sudoku puzzles with a brute force algorithm</li>
@@ -124,7 +136,7 @@
                     <p>
                         <b class="text-lg">Language Interpreter </b> | <i>Rust</i>
                     </p>
-                    <p>June 2023</p>
+                    <p class="text-end">June 2023</p>
                 </div>
                 <ul class="list-disc list-inside pl-3 pt-1">
                     <li>Developed an tree-walking interpreter for a programming language</li>
@@ -138,15 +150,17 @@
 
 <style lang="postcss">
     .resume-section h2 {
-        @apply font-serif text-2xl border-b-[1px] text-white;
+        @apply font-serif text-2xl border-b-[1px] text-black dark:text-white;
     }
     .resume-section .resume-content {
-        @apply px-4 py-3;
+        @apply sm:px-4 py-3;
     }
     .resume-heading {
-        @apply font-serif text-xl font-bold text-white;
-    }
+        @apply font-serif text-xl font-bold text-black dark:text-white;
+    }   
+    
     .spread {
-        @apply flex justify-between font-serif text-white;
+        @apply flex justify-between items-center font-serif text-black dark:text-white;
     }
+    
 </style>

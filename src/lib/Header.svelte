@@ -19,15 +19,15 @@
 </script>
 
 <header 
-    class="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60" 
+    class="sticky top-0 z-50 bg-background/95 backdrop-blur-lg supports-[backdrop-filter]:bg-background/60" 
     data-sveltekit-noscroll 
     data-sveltekit-preload-code="eager"
 >
-    <div class="layout-md py-1 flex justify-between items-center border-b border-neutral-700">
+    <div class="layout-md py-1 flex justify-between items-center border-b border-neutral-300 dark:border-neutral-700">
         <bi class="my-2 text-xl sm:text-2xl">
             <a href="/">Cameron Kauffman</a>
             {#if page_title}
-                <span class="font-normal text-neutral-200">
+                <span class="font-normal text-neutral-800 dark:text-neutral-200">
                     <span class="text-neutral-500 hidden sm:inline">—</span>
                     <p class="sm:inline">
                         {page_title}

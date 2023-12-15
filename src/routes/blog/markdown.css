@@ -7,11 +7,11 @@
 }
 
 .markdown b, strong {
-    @apply !text-white;
+    @apply !text-black dark:!text-white;
 }
 
 .markdown p a {
-    @apply text-white !underline underline-offset-[3px] decoration-neutral-400 dark:decoration-neutral-500;
+    @apply text-black dark:text-white !underline underline-offset-[3px] decoration-neutral-300 dark:decoration-neutral-500;
     @apply hover:text-black hover:decoration-black transition-colors;
     @apply dark:hover:text-white dark:hover:decoration-white;
 }

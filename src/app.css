@@ -11,16 +11,16 @@
     scrollbar-color: #545454 #262626;
   }
   body {
-    @apply bg-neutral-100 text-neutral-900 dark:bg-neutral-900 dark:text-[#D4D4D4];
+    @apply bg-white text-neutral-800 dark:bg-neutral-900 dark:text-[#D4D4D4];
     @apply sm:pb-12;
   }
 
   bi {
-    @apply font-livory italic font-bold text-[105%] leading-[100%] text-white;
+    @apply font-livory italic font-bold text-[105%] leading-[100%] text-black dark:text-white;
   }
   
   b {
-    @apply text-white;
+    @apply text-black dark:text-white;
   }
 
   i {
@@ -41,13 +41,13 @@ html {
 }
 
 .link {
-  @apply text-white underline underline-offset-[3px] decoration-neutral-400 dark:decoration-neutral-500;
+  @apply text-black dark:text-white underline underline-offset-[3px] decoration-neutral-300 dark:decoration-neutral-500;
   @apply hover:text-black hover:decoration-black transition-colors;
   @apply dark:hover:text-white dark:hover:decoration-white;
 }
 
 .link-hidden {
-  @apply text-white hover:underline underline-offset-[3px] decoration-neutral-400 dark:decoration-neutral-500;
+  @apply text-black dark:text-white hover:underline underline-offset-[3px] decoration-neutral-400 dark:decoration-neutral-500;
   @apply hover:text-black hover:decoration-black transition-colors;
   @apply dark:hover:text-white dark:hover:decoration-white;
 }
@@ -57,11 +57,11 @@ html {
 }
 
 h1 {
-  @apply text-3xl font-bold my-2 text-white;
+  @apply text-3xl font-bold my-2 text-black dark:text-white;
 }
 
 h2 {
-  @apply text-2xl font-semibold my-1 text-white;
+  @apply text-2xl font-semibold my-1 text-black dark:text-white;
 }
 
 

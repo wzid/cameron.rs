@@ -5,7 +5,7 @@
 
 <div class="mt-20 mb-8">
     <div class="flex flex-col gap-6 items-center justify-center">
-        <div class="flex gap-6 text-white">
+        <div class="flex gap-6 text-black dark:text-white">
             <a href="https://github.com/wzid" target="_blank">
                 <Icon icon="mdi:github" width={icon_size} height={icon_size} class="transition-all hover:brightness-[.80]" />
             </a>
@@ -19,7 +19,7 @@
                 <Icon icon="devicon:linkedin" width={icon_size} height={icon_size} class="transition-all hover:brightness-[.80]" />
             </a>
         </div>
-        <p class="text-neutral-400 text-sm">
+        <p class="text-neutral-600 dark:text-neutral-400 text-sm">
             cameron © 2023
         </p>
     </div>

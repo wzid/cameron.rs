@@ -12,3 +12,4 @@ vite.config.ts.timestamp-*
 package-lock.json
 public
 firebase-debug.log
+/src/routes/blog/.obsidian

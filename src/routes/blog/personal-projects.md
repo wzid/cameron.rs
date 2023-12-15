@@ -1,7 +1,9 @@
 ---
 title: Personal Projects are Important
 date: '5-1-2023'
-desc: After a failed interview, I realized the importance of personal projects.
+desc: After a failed interview, I realized the importance of personal projects. This article discusses my journey of creating projects and why they are important.
+tags:
+    - talk
 ---
 
 In January, I landed an interview for an internship at Lenovo for a Java Engineering position. My confidence was super high because I've been coding in Java for 3 years and I knew there was no question that I could not answer confidently. Ironicaly enough, that was not true. What I didn't expect was the interviewer asking me about my personal projects. I didn't have any.
