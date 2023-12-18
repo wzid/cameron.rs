@@ -93,7 +93,7 @@
     <div>
         <h2 class="mb-6">From the blog</h2>
         <a href={data.post.path}>
-            <div class="p-4 rounded-lg border border-neutral-300 dark:border-neutral-700 bg-neutral-200 dark:bg-neutral-800 transition-all hover:bg-[#d9d9d8] hover:dark:bg-[#333333]">
+            <div class="p-4 rounded-lg border border-neutral-300 dark:border-neutral-700 dark:bg-neutral-800 transition-all shadow-none ease-out duration-200 hover:shadow-3xl hover:dark:bg-[#333333]">
                 <div class="pb-1">
                     <div class="flex items-center justify-between">
                         <h3 class="leading-none font-bold text-neutral-800 dark:text-neutral-200">{data.post.meta.title}</h3>
@@ -116,7 +116,7 @@
         <h2 class="mb-6">My notable projects:</h2>
         <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-2">
             {#each projects as project }
-                <a target="_blank" href={project.href} class="flex flex-col border border-neutral-300 dark:border-neutral-700 justify-between p-6 rounded-lg bg-neutral-200 dark:bg-neutral-800 transition-all hover:bg-[#d9d9d8] hover:dark:bg-[#333333]">
+                <a target="_blank" href={project.href} class="flex flex-col border border-neutral-300 dark:border-neutral-700 dark:bg-neutral-800 justify-between p-6 rounded-lg transition-all shadow-none ease-out duration-150 hover:shadow-3xl hover:dark:bg-[#333333]">
                     <div class="flex flex-col gap-y-2">
                         <h3 class="font-bold text-xl text-neutral-800 dark:text-neutral-200">
                             {project.name}
@@ -154,7 +154,7 @@
 
 <style lang="postcss">
     .tag {
-        @apply px-2 rounded-xl text-base bg-[#bbbbbb] text-neutral-600 dark:bg-neutral-700 dark:text-neutral-400;
+        @apply px-2 rounded-xl text-base bg-neutral-300 text-neutral-600 dark:bg-neutral-700 dark:text-neutral-400;
         @apply transition-colors hover:bg-neutral-400 hover:text-neutral-700 hover:dark:bg-neutral-600 hover:dark:text-neutral-300;
     }
 </style>

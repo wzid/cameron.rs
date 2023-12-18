@@ -9,9 +9,6 @@ tags:
 draft: true
 ---
 
-<script>
-import CodeFilename from '$lib/CodeFilename.svelte'
-</script>
 
 The word Svelte is from French, *svelt*, meaning "slim, slender". Which is the perfect description for this framework that prides itself on minimalist design. Svelte is very fresh take on frontend frameworks with its unique approach and cool name.
 
@@ -27,7 +24,6 @@ My background in frontend frameworks consists of React and Next.js (which are th
 
 After the initial hurdles, I began to really see the difference in developing in Svelte. Things like making components were as simple as this:
 
-<CodeFilename filename="src/lib/HeaderName.svelte" />
 
 ```svelte
 <script>
@@ -39,7 +35,6 @@ export let name;
 
 and then importing the component:
 
-<CodeFilename filename="src/routes/+page.svelte" />
 
 ```svelte
 <script>

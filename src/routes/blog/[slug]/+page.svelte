@@ -36,7 +36,7 @@
 	<div class="markdown">
 		<svelte:component this={data.content} />
 	</div>
-    <div class="my-8 border-l-2 rounded-xl border-neutral-700 bg-neutral-800 pl-4 p-2">
+    <div class="my-8 border-l-2 rounded-xl border-neutral-300 bg-neutral-200 dark:border-neutral-700 dark:bg-neutral-800 pl-4 p-2">
         <h2>👋 Thanks for reading!</h2>
         <p>If you enjoyed this post, then consider sharing it and/or following me on Github.</p>
         <div class="flex gap-4 mb-2 mt-4">

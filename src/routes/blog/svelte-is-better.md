@@ -24,7 +24,7 @@ Sure, React's fundamentals aren't impossible, but its approach to building UIs d
 # What's the difference maker?
 There are two points I would like to raise on what makes Svelte so much better for beginners.
 ## Tutorial Website
-Holy crap. The way that Svelte has structured their tutorial website and documentation is top tier.
+Oh my gosh. The way that Svelte has structured their tutorial website and documentation is top tier.
 
 When you go to their [tutorial page](https://learn.svelte.dev) it greets you with some instructions on the left and an IDE on the right. Almost like the layout for [Leetcode](https://leetcode.com).
 
@@ -67,7 +67,7 @@ export default () => {
 	)
 }
 ```
-My brother in Christ... There is no debate. From someone who used to be a React fanboy, the Svelte code is:
+My brother/sister in Christ... There is no debate. From someone who used to be a React fanboy, the Svelte code is:
 1. Easier to read
 2. More enjoyable to write
 3. **Simple!**

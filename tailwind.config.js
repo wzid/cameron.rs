@@ -14,6 +14,9 @@ export default {
 			livory: ["'Livory'", "serif"],
 			serif: ["'Source Serif 4'", "serif"],
 			mono: ["Monaco", "Courier New", "monospace"]
+		},
+		boxShadow: {
+			'3xl': '0 4px 8px rgba(0,0,0,.1),0 2px 4px rgba(0,0,0,.06)'
 		}
 	  }
 	},
