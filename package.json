@@ -26,7 +26,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@fontsource/newsreader": "^5.0.15",
 		"svelte": "^3.58.0",
 		"tailwind-merge": "^2.0.0",
 		"tailwind-variants": "^0.1.18"

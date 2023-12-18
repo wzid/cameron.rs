@@ -12,7 +12,7 @@ export default {
 		fontFamily: {
 			sans: ["'Source Sans 3'", "sans-serif"],
 			livory: ["'Livory'", "serif"],
-			serif: ["Newsreader", "serif"],
+			serif: ["'Source Serif 4'", "serif"],
 			mono: ["Monaco", "Courier New", "monospace"]
 		}
 	  }

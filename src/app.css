@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@300;400;600;700;800&family=Source+Serif+4:ital,opsz,wght@1,8..60,500&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -14,18 +15,20 @@
     @apply bg-white text-neutral-800 dark:bg-neutral-900 dark:text-[#D4D4D4];
     @apply sm:pb-12;
   }
-
-  bi {
-    @apply font-livory italic font-bold text-[105%] leading-[100%] text-black dark:text-white;
+  
+  .text-accent {
+    @apply text-emerald-500
   }
+
+  .text-accent-opaque {
+    @apply text-[#03BA7C]/80
+  }
+
   
   b {
     @apply text-black dark:text-white;
   }
 
-  i {
-    @apply font-livory text-[105%] leading-[100%];
-  }
   .mono {
     @apply font-mono text-[85%] leading-[100%];
   }
@@ -41,15 +44,14 @@ html {
 }
 
 .link {
-  @apply text-black dark:text-white underline underline-offset-[3px] decoration-neutral-300 dark:decoration-neutral-500;
-  @apply hover:text-black hover:decoration-black transition-colors;
-  @apply dark:hover:text-white dark:hover:decoration-white;
+  @apply text-emerald-500 underline underline-offset-2 decoration-[1.5px] decoration-emerald-500/50;
+  @apply hover:dark:brightness-125 hover:brightness-75 transition-all;
+  
 }
 
 .link-hidden {
-  @apply text-black dark:text-white hover:underline underline-offset-[3px] decoration-neutral-400 dark:decoration-neutral-500;
-  @apply hover:text-black hover:decoration-black transition-colors;
-  @apply dark:hover:text-white dark:hover:decoration-white;
+  @apply text-black dark:text-white hover:underline underline-offset-2 decoration-[1.5px] decoration-emerald-500/50;
+  @apply hover:dark:brightness-125 hover:brightness-75 transition-all;
 }
 
 ::selection {

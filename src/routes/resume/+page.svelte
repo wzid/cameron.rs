@@ -162,5 +162,9 @@
     .spread {
         @apply flex justify-between items-center font-serif text-black dark:text-white;
     }
+
+    i {
+        @apply font-serif text-[105%] leading-[100%] text-neutral-800 dark:text-[#D4D4D4]
+    }
     
 </style>

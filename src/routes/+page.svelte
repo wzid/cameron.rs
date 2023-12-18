@@ -30,7 +30,7 @@
         {
             name: 'cameron.rs',
             href: 'https://github.com/wzid/cameron.rs',
-            desc: 'My personal website built with SvelteKit and TailwindCSS',
+            desc: 'My personal website built with Svelte and TailwindCSS',
             tool_icons: ['ri:svelte-fill', 'devicon-plain:javascript', 'mdi:tailwind',],
             github: true,
         },
@@ -97,7 +97,7 @@
                 <div class="pb-1">
                     <div class="flex items-center justify-between">
                         <h3 class="leading-none font-bold text-neutral-800 dark:text-neutral-200">{data.post.meta.title}</h3>
-                        <Icon icon="prime:arrow-up-right" width="18" height="18" class="block text-neutral-400" />
+                        <Icon icon="prime:arrow-up-right" width="18" height="18" class="block text-emerald-500" />
                     </div>
                     <div class="mb-1 sm:my-1">
                         <p class="text-base inline">{post_time}</p>
@@ -116,7 +116,7 @@
         <h2 class="mb-6">My notable projects:</h2>
         <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-2">
             {#each projects as project }
-                <a href={project.href} class="flex flex-col border border-neutral-300 dark:border-neutral-700 justify-between p-6 rounded-lg bg-neutral-200 dark:bg-neutral-800 transition-all hover:bg-[#d9d9d8] hover:dark:bg-[#333333]">
+                <a target="_blank" href={project.href} class="flex flex-col border border-neutral-300 dark:border-neutral-700 justify-between p-6 rounded-lg bg-neutral-200 dark:bg-neutral-800 transition-all hover:bg-[#d9d9d8] hover:dark:bg-[#333333]">
                     <div class="flex flex-col gap-y-2">
                         <h3 class="font-bold text-xl text-neutral-800 dark:text-neutral-200">
                             {project.name}

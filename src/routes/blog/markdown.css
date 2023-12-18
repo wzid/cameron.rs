@@ -2,6 +2,15 @@
     @apply pt-6 pb-2;
 }
 
+.markdown h2 {
+    @apply pt-4;
+}
+
+/* Fix so that there isnt a ton of padding for an h2 after an h1 */
+.markdown h1 + h2  {
+    @apply pt-0;
+}
+
 .markdown p + p {
     @apply pt-6;
 }
@@ -11,11 +20,34 @@
 }
 
 .markdown p a {
-    @apply text-black dark:text-white !underline underline-offset-[3px] decoration-neutral-300 dark:decoration-neutral-500;
-    @apply hover:text-black hover:decoration-black transition-colors;
-    @apply dark:hover:text-white dark:hover:decoration-white;
+    @apply text-emerald-500 underline underline-offset-2 decoration-[1.5px] decoration-emerald-500/50;
+    @apply hover:dark:brightness-125 hover:brightness-75 transition-all;
+}
+
+.markdown p a strong {
+    @apply !text-emerald-500;
 }
 
 .markdown img {
-    @apply mx-auto
+    @apply mx-auto pb-6;
+}
+
+.markdown em {
+    @apply font-serif italic;
+}
+
+.markdown ol {
+    @apply list-decimal list-inside pl-4 pb-4;
+}
+
+.markdown ol li::marker {
+    @apply font-bold;
+}
+
+.markdown blockquote {
+    @apply border-l-2 border-emerald-500 px-4 my-4 py-2 bg-neutral-800 w-fit;
+}
+
+.markdown blockquote p+p {
+    @apply pt-2;
 }
