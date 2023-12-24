@@ -39,6 +39,7 @@
     <div class="my-8 border-l-2 rounded-xl border-neutral-300 bg-neutral-200 dark:border-neutral-700 dark:bg-neutral-800 pl-4 p-2">
         <h2>👋 Thanks for reading!</h2>
         <p>If you enjoyed this post, then consider sharing it and/or following me on Github.</p>
+        <p>I am also currently <b>looking for an internship</b>, so please <a class="link" href="mailto:me@cameron.rs">contact me</a> with any opportunities</p>
         <div class="flex gap-4 mb-2 mt-4">
             <a class="flex items-center text-xl w-fit bg-[#1D9BF0] hover:bg-[#198CD8] transition-colors rounded-lg py-1 px-2 text-blue-100 gap-2" target="_blank" href="https://twitter.com/intent/tweet?text=I+just+read+{data.title}+by+%40cameronkffn+%F0%9F%91%87+https%3A%2F%2Fcameron.rs%2Fblog%2F{data.slug}">
                 <Icon icon="simple-icons:x" width="14" height="14" />
