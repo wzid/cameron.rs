@@ -19,7 +19,7 @@
 </script>
 
 <header 
-    class="sticky top-0 z-50 bg-background/95 backdrop-blur-lg supports-[backdrop-filter]:bg-background/60" 
+    class="sticky top-0 z-50 bg-background/95 backdrop-blur backdrop-saturate-[3] supports-[backdrop-filter]:bg-background/60" 
     data-sveltekit-noscroll 
     data-sveltekit-preload-code="eager"
 >
