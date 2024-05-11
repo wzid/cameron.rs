@@ -19,11 +19,11 @@
 </script>
 
 <header 
-    class="sticky top-0 z-50 bg-background/95 backdrop-blur backdrop-saturate-[3] supports-[backdrop-filter]:bg-background/60" 
+    class="sticky top-0 z-50 bg-background backdrop-blur-2xl blur-mask backdrop-saturate-[3] supports-[backdrop-filter]:bg-background/60" 
     data-sveltekit-noscroll 
     data-sveltekit-preload-code="eager"
 >
-    <div class="layout-md py-1 flex justify-between items-center border-b border-neutral-300 dark:border-neutral-700">
+    <div class="layout-md py-1 flex justify-between items-center border-b border-neutral-300 dark:border-neutral-700 ">
         <bi class="my-2 text-xl sm:text-2xl font-livory italic font-bold text-[105%] leading-[100%] text-black dark:text-white">
             <a href="/">Cameron Kauffman</a>
             {#if page_title}
@@ -50,3 +50,9 @@
 
     </div>
 </header>
+
+<style lang="postcss">
+    .blur-mask {
+        mask-image: linear-gradient(rgba(0,0,0, 1), rgba(0,0,0, 0));
+    }
+</style>
