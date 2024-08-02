@@ -11,6 +11,7 @@
 	},
 	"type": "module",
 	"devDependencies": {
+		"@iconify/svelte": "^4.0.2",
 		"@sveltejs/adapter-auto": "^3.2.2",
 		"@sveltejs/adapter-static": "^3.0.2",
 		"@sveltejs/kit": "^2.5.19",
@@ -25,7 +26,6 @@
 		"vite": "^5.3.5"
 	},
 	"dependencies": {
-		"@iconify/svelte": "^4.0.2",
 		"tailwind-merge": "^2.0.0",
 		"tailwind-variants": "^0.2.1"
 	}
