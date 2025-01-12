@@ -104,11 +104,10 @@
       </ul>
     </div>
     <p>
-      I am super interested in embedded systems, compilers, and programming languages. I've been having an itch to start
-      a startup. Not sure what my idea is yet, but I'm getting there :)
+      I am super interested in embedded systems, compilers, and programming languages.
     </p>
     <p>
-      Oh, and, I write blog posts sometimes. Feel free to <a class="link" href="/blog">read them</a>. One of my posts
+      I also write blog posts sometimes. Feel free to <a class="link" href="/blog">read them</a>. One of my posts
       was featured on a <a class="link" href="https://www.youtube.com/watch?v=8D7FZoQ-z20">YouTube video</a> with over
       <b>250k</b> views!
     </p>
