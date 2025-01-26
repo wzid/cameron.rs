@@ -1,5 +1,5 @@
 .markdown h1 {
-    @apply pt-6 pb-2;
+    @apply pb-2 pt-6;
 }
 
 .markdown h2 {
@@ -7,7 +7,7 @@
 }
 
 /* Fix so that there isnt a ton of padding for an h2 after an h1 */
-.markdown h1 + h2  {
+.markdown h1 + h2 {
     @apply pt-0;
 }
 
@@ -15,13 +15,14 @@
     @apply pt-6;
 }
 
-.markdown b, strong {
+.markdown b,
+strong {
     @apply !text-black dark:!text-white;
 }
 
 .markdown p a {
-    @apply text-emerald-500 underline underline-offset-2 decoration-[1.5px] decoration-emerald-500/50;
-    @apply hover:dark:brightness-125 hover:brightness-75 transition-all;
+    @apply text-emerald-500 underline decoration-emerald-500/50 decoration-[1.5px] underline-offset-2;
+    @apply transition-all hover:brightness-75 hover:dark:brightness-125;
 }
 
 .markdown p a strong {
@@ -37,7 +38,7 @@
 }
 
 .markdown ol {
-    @apply list-decimal list-inside pl-4 pb-4;
+    @apply list-inside list-decimal pb-4 pl-4;
 }
 
 .markdown ol li::marker {
@@ -45,9 +46,9 @@
 }
 
 .markdown blockquote {
-    @apply border-l-2 border-emerald-500 px-4 my-4 py-2 bg-neutral-800 w-fit;
+    @apply my-4 w-fit border-l-2 border-emerald-500 bg-neutral-800 px-4 py-2;
 }
 
-.markdown blockquote p+p {
+.markdown blockquote p + p {
     @apply pt-2;
 }
