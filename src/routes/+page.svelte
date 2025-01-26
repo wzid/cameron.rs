@@ -14,11 +14,25 @@
       github: true,
     },
     {
+      name: "multithreaded-blur",
+      href: "https://github.com/wzid/multithreaded-blur",
+      desc: "Multithreaded implementation of a Gaussian blur that processes BMP images in parallel segments ",
+      tool_icons: ["simple-icons:cplusplus"],
+      github: true,
+    },
+    {
       name: "sudoku-solver",
       href: "https://github.com/wzid/sudoku-solver",
       desc: "Sudoku Solver using bitmasks and bit-manipulation",
       tool_icons: ["simple-icons:rust", "wasm"],
       github: true,
+    },
+    {
+      name: "lucpc.org",
+      href: "https://lucpc.org",
+      desc: "Website for Liberty University's Competitive Programming Club",
+      tool_icons: ["akar-icons:nextjs-fill", "devicon-plain:javascript", "mdi:tailwind"],
+      github: false,
     },
     {
       name: "monkey-rs",
@@ -40,13 +54,6 @@
       desc: "CLI tool to create Visual Studio projects from VSCode workspaces",
       tool_icons: ["simple-icons:rust"],
       github: true,
-    },
-    {
-      name: "lucpc.org",
-      href: "https://lucpc.org",
-      desc: "Website for Liberty University's Competitive Programming Club",
-      tool_icons: ["akar-icons:nextjs-fill", "devicon-plain:javascript", "mdi:tailwind"],
-      github: false,
     },
   ];
 </script>
