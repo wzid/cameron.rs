@@ -115,7 +115,7 @@
     <h2 class="mb-6">Most recent from the blog</h2>
     <a href={data.post.path}>
       <div
-        class="rounded-lg border border-neutral-300 p-4 shadow-none transition-all duration-200 ease-out hover:shadow-3xl dark:border-neutral-700 dark:bg-neutral-800 hover:dark:bg-[#333333]"
+        class="group rounded-lg border border-neutral-300 p-4 shadow-none transition-all duration-200 ease-out hover:shadow-3xl dark:border-neutral-700 dark:bg-neutral-800 hover:dark:bg-[#333333]"
       >
         <div class="pb-1">
           <div class="flex items-center justify-between">
@@ -191,6 +191,6 @@
 
   .tag {
     @apply rounded-xl bg-neutral-300 px-2 text-base text-neutral-600 dark:bg-neutral-700 dark:text-neutral-400;
-    @apply transition-colors hover:bg-neutral-400 hover:text-neutral-700 hover:dark:bg-neutral-600 hover:dark:text-neutral-300;
+    @apply transition-colors group-hover:bg-neutral-400 group-hover:text-neutral-700 group-hover:dark:bg-neutral-600 group-hover:dark:text-neutral-300;
   }
 </style>
