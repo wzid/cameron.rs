@@ -2,6 +2,7 @@
   import Icon from "@iconify/svelte";
   import { timeAgo } from "$lib/utils";
   import type { Post } from "$types";
+  import Meta from "$lib/Meta.svelte";
   let { data }: { data: { post: Post } } = $props();
 
   let post_time = timeAgo(data.post.meta.date);
@@ -59,26 +60,12 @@
   ];
 </script>
 
-<svelte:head>
-  <title>cameron.rs</title>
-  <meta
-    name="description"
-    content="My personal website where you can learn about me, see my resume, and some stuff that I've written"
-  />
-  <meta name="og:title" content="Cameron Kauffman" />
-  <meta
-    name="og:description"
-    content="My personal website where you can learn about me, see my resume, and some stuff that I've written"
-  />
-  <meta name="og:type" content="website" />
-  <meta name="og:url" content="https://cameron.rs" />
-  <meta name="og:site_name" content="cameron.rs" />
-  <meta name="twitter:title" content="Cameron Kauffman" />
-  <meta
-    name="twitter:description"
-    content="My personal website where you can learn about me, see my resume, and some stuff that I've written"
-  />
-</svelte:head>
+
+<Meta
+  title="cameron.rs"
+  desc="My personal website where you can learn about me and view some stuff that I've written"
+  keywords="cameron, compilers, python, software engineering, liberty, university, rust, liberty university"
+/>
 
 <div class="pb-6">
   <h1 class="my-0! text-4xl! sm:text-5xl!">Hi, I'm Cameron 🚀</h1>

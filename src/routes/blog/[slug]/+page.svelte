@@ -3,20 +3,15 @@
   import Icon from "@iconify/svelte";
   import "../markdown.css";
   import "../prismtheme.css";
+  import Meta from "$lib/Meta.svelte";
   let { data } = $props();
 </script>
 
-<svelte:head>
-  <title>{data.title}</title>
-  <meta name="description" content={data.desc} />
-  <meta name="og:title" content={data.title} />
-  <meta name="og:description" content={data.desc} />
-  <meta name="og:type" content="website" />
-  <meta name="og:url" content="https://cameron.rs" />
-  <meta name="og:site_name" content="cameron.rs/blog" />
-  <meta name="twitter:title" content={data.title} />
-  <meta name="twitter:description" content={data.desc} />
-</svelte:head>
+<Meta
+  title="cameron.rs - {data.title}"
+  desc={data.desc}
+  keywords="blog, cameron, compilers, python, software engineering, liberty, university, rust, liberty university, {data.tags.join(", ")}"
+/>
 
 <article class="text-xl">
   <header class="mb-4">

@@ -1,29 +1,15 @@
 <script lang="ts">
   import PostListing from "$lib/PostListing.svelte";
+  import Meta from "$lib/Meta.svelte";
   let { data } = $props();
   let { tag, posts } = data;
 </script>
 
-<svelte:head>
-  <title>blog - #{tag}</title>
-  <meta
-    name="description"
-    content="My personal website where you can learn about me, see my resume, and some stuff that I've written"
-  />
-  <meta name="og:title" content="Cameron Kauffman - Blog #{tag}" />
-  <meta
-    name="og:description"
-    content="My personal website where you can learn about me, see my resume, and some stuff that I've written"
-  />
-  <meta name="og:type" content="website" />
-  <meta name="og:url" content="https://cameron.rs" />
-  <meta name="og:site_name" content="cameron.rs" />
-  <meta name="twitter:title" content="Cameron Kauffman - Blog #{tag}" />
-  <meta
-    name="twitter:description"
-    content="My personal website where you can learn about me, see my resume, and some stuff that I've written"
-  />
-</svelte:head>
+<Meta
+  title="cameron.rs - blog #{tag}"
+  desc="My blog where you can view some stuff that I've written"
+  keywords="blog, cameron, compilers, python, software engineering, liberty, university, rust, liberty university, {tag}"
+/>
 
 <div class="mt-2 mb-8 flex items-center">
   <a href="/blog" class="pt-0 pb-0 text-4xl font-bold text-black sm:text-5xl dark:text-white">Blog</a>

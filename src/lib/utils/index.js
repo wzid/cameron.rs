@@ -26,7 +26,7 @@ export function timeAgo(dateInput) {
   const diffInDays = Math.floor(diffInTime / (1000 * 3600 * 24));
   const months = (now.getFullYear() - date.getFullYear()) * 12 + (now.getMonth() - date.getMonth());
   const years = Math.floor(months / 12);
-
+  
   if (years > 0) {
     return years === 1 ? `${years} year ago` : `${years} years ago`;
   } else if (months > 0) {
