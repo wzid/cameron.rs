@@ -1,6 +1,6 @@
 <script lang="ts">
     import PostListing from "$lib/PostListing.svelte";
-    import type { Post } from "$lib/types";
+    import type { Post } from "$types";
     let { data }: { data: { posts: Post[] } } = $props();
 </script>
 

@@ -21,6 +21,7 @@ const config = {
         adapter: adapter(),
         alias: {
             $lib: "./src/lib",
+            $types: "./src/lib/types",
         },
     },
 };
