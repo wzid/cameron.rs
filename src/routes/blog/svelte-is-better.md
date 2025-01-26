@@ -3,9 +3,9 @@ title: Svelte is better for beginners
 date: 12-17-2023
 desc: Svelte has recently become near and dear to me. I would like to explain the hype around this frontend framework and why it makes sense
 tags:
-    - programming
-    - svelte
-    - beginners
+  - programming
+  - svelte
+  - beginners
 ---
 
 Hi, I'm Cameron, and welcome to my Ted Talk. I'm here to shout my opinion about frontend frameworks into the endless void of hot takes and terrible opinions. I firmly believe that anyone learning frontend web development should start with Svelte rather than React.
@@ -49,8 +49,8 @@ Ahhh! I can't get over the simplicity of this framework. Everything just makes s
 
 ```svelte
 <script>
-    let a = 0,
-        b = 0;
+  let a = 0,
+    b = 0;
 </script>
 
 <input type="number" bind:value={a} />

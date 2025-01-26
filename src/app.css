@@ -6,63 +6,63 @@
 @tailwind utilities;
 
 @layer base {
-    html {
-        font-size: 14px;
-        scroll-behavior: smooth;
-        scrollbar-color: #545454 #262626;
-    }
-    body {
-        @apply bg-white text-neutral-800 dark:bg-neutral-900 dark:text-[#D4D4D4];
-        @apply sm:pb-12;
-    }
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+    scrollbar-color: #545454 #262626;
+  }
+  body {
+    @apply bg-white text-neutral-800 dark:bg-neutral-900 dark:text-[#D4D4D4];
+    @apply sm:pb-12;
+  }
 
-    .text-accent {
-        @apply text-emerald-500;
-    }
+  .text-accent {
+    @apply text-emerald-500;
+  }
 
-    .text-accent-opaque {
-        @apply text-[#03BA7C]/80;
-    }
+  .text-accent-opaque {
+    @apply text-[#03BA7C]/80;
+  }
 
-    b {
-        @apply text-black dark:text-white;
-    }
+  b {
+    @apply text-black dark:text-white;
+  }
 
-    .mono {
-        @apply font-mono text-[85%] leading-[100%];
-    }
+  .mono {
+    @apply font-mono text-[85%] leading-[100%];
+  }
 }
 
 .layout-md {
-    @apply mx-auto max-w-screen-md px-4 md:px-2;
+  @apply mx-auto max-w-screen-md px-4 md:px-2;
 }
 
 html {
-    @apply motion-safe:scroll-smooth;
+  @apply motion-safe:scroll-smooth;
 }
 
 .link {
-    @apply text-emerald-500 underline decoration-emerald-500/50 decoration-[1.5px] underline-offset-2;
-    @apply transition-all hover:brightness-75 hover:dark:brightness-125;
+  @apply text-emerald-500 underline decoration-emerald-500/50 decoration-[1.5px] underline-offset-2;
+  @apply transition-all hover:brightness-75 hover:dark:brightness-125;
 }
 
 .link-hidden {
-    @apply text-black decoration-emerald-500/50 decoration-[1.5px] underline-offset-2 hover:underline dark:text-white;
-    @apply transition-all hover:brightness-75 hover:dark:brightness-125;
+  @apply text-black decoration-emerald-500/50 decoration-[1.5px] underline-offset-2 hover:underline dark:text-white;
+  @apply transition-all hover:brightness-75 hover:dark:brightness-125;
 }
 
 ::selection {
-    @apply bg-neutral-200 dark:bg-neutral-600;
+  @apply bg-neutral-200 dark:bg-neutral-600;
 }
 
 h1 {
-    @apply my-2 text-3xl font-bold text-black dark:text-white;
+  @apply my-2 text-3xl font-bold text-black dark:text-white;
 }
 
 h2 {
-    @apply my-1 text-2xl font-semibold text-black dark:text-white;
+  @apply my-1 text-2xl font-semibold text-black dark:text-white;
 }
 
 .dark-accent {
-    @apply border-[#27272A];
+  @apply border-[#27272A];
 }
