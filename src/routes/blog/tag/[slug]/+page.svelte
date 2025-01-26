@@ -1,7 +1,7 @@
 <script lang="ts">
-  let { tag, posts } = data;
   import PostListing from "$lib/PostListing.svelte";
   let { data } = $props();
+  let { tag, posts } = data;
 </script>
 
 <svelte:head>

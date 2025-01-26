@@ -6,5 +6,5 @@ export interface Post {
     tags: string[];
     draft?: boolean;
   };
-  path: string;
+  postSlug: string;
 }

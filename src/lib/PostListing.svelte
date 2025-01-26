@@ -9,7 +9,7 @@
     <div>
       <div class="flex flex-col items-start justify-between sm:flex-row sm:items-center">
         <h2 class="my-0 text-2xl sm:text-3xl">
-          <a class="link-hidden" href={post.path}>
+          <a class="link-hidden" href="/blog/{post.postSlug}">
             {post.meta.title}
           </a>
         </h2>

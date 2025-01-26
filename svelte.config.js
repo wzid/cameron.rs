@@ -22,6 +22,7 @@ const config = {
     alias: {
       $lib: "./src/lib",
       $types: "./src/lib/types",
+      $posts: "./src/blog-posts",
     },
   },
 };
