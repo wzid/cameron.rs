@@ -74,15 +74,14 @@
 
 <div class="pb-6">
   <h1 class="my-0 text-4xl sm:text-5xl">Hi, I'm Cameron 🚀</h1>
-  <p class="text-lg text-neutral-500">software engineer, designer, and student</p>
+  <p class="text-lg text-neutral-500">follower of Christ, software engineer, and student</p>
 </div>
 
 <div class="space-y-12 text-xl">
   <!-- prettier-ignore -->
   <div class="space-y-6">
     <p>
-      I do a lot of programming with various different tools. I'm well versed with programming languages such as Java,
-      C++, Python, JavaScript, and Rust.
+      I do a lot of programming with various different tools. I'm well versed with programming languages such as Python, C, C++, JavaScript, Rust, and more.
     </p>
     <p>
       As a follower of Christ, I strive to glorify God in all that I do, including software development. I hope to
@@ -102,6 +101,7 @@
           Competition Coordinator for the <a class="link" href="https://lucpc.org">Competitive Programming Club</a>
         </li>
         <li>Innovation & Development officer for the Software Engineering Club</li>
+        <li>Tutor for CSCN 443: Operating Systems and CSCN 342: Computer Architecture </li>
       </ul>
     </div>
     <p>I am super interested in embedded systems, compilers, and programming languages.</p>
