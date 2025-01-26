@@ -25,8 +25,8 @@
   />
 </svelte:head>
 
-<div class="mb-8 mt-2 flex items-center">
-  <a href="/blog" class="pb-0 pt-0 text-4xl font-bold text-black sm:text-5xl dark:text-white">Blog</a>
+<div class="mt-2 mb-8 flex items-center">
+  <a href="/blog" class="pt-0 pb-0 text-4xl font-bold text-black sm:text-5xl dark:text-white">Blog</a>
   <h2
     class="ml-4 w-fit rounded-xl bg-neutral-300 px-2 py-1 leading-none text-neutral-600 dark:bg-neutral-700 dark:text-neutral-400"
   >

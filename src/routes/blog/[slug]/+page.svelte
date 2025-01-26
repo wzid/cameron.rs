@@ -28,7 +28,7 @@
       <p class="inline pt-0 text-lg">Posted: {data.date}</p>
       <div class="inline space-x-2 sm:pl-2">
         {#each data.tags as tag}
-          <a href="/blog/tag/{tag}" class="tag">#{tag}</a>
+          <a href="/blog/tag/{tag}" class="rounded-xl bg-neutral-300 px-2 text-base text-neutral-600 dark:bg-neutral-700 dark:text-neutral-400 transition-colors hover:bg-neutral-400 hover:text-neutral-700 dark:hover:bg-neutral-600 dark:hover:text-neutral-300">#{tag}</a>
         {/each}
       </div>
     </div>
@@ -42,7 +42,7 @@
     <h2>👋 Thanks for reading!</h2>
     <p>If you enjoyed this post, then consider sharing it and/or following me on Github.</p>
     <!-- <p>I am also currently <b>looking for an internship</b>, so please <a class="link" href="mailto:me@cameron.rs">contact me</a> with any opportunities</p> -->
-    <div class="mb-2 mt-4 flex gap-4">
+    <div class="mt-4 mb-2 flex gap-4">
       <a
         class="flex w-fit items-center gap-2 rounded-lg bg-[#1D9BF0] px-2 py-1 text-xl text-blue-100 transition-colors hover:bg-[#198CD8]"
         target="_blank"
@@ -62,10 +62,3 @@
     </div>
   </div>
 </article>
-
-<style lang="postcss">
-  .tag {
-    @apply rounded-xl bg-neutral-300 px-2 text-base text-neutral-600 dark:bg-neutral-700 dark:text-neutral-400;
-    @apply transition-colors hover:bg-neutral-400 hover:text-neutral-700 hover:dark:bg-neutral-600 hover:dark:text-neutral-300;
-  }
-</style>

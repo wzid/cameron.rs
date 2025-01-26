@@ -1,54 +1,92 @@
+@reference "tailwindcss/theme";
 .markdown h1 {
-  @apply pb-2 pt-6;
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .markdown h2 {
-  @apply pt-4;
+  padding-top: 1rem;
 }
 
-/* Fix so that there isnt a ton of padding for an h2 after an h1 */
+/* Fix so that there isn't a ton of padding for an h2 after an h1 */
 .markdown h1 + h2 {
-  @apply pt-0;
+  padding-top: 0;
 }
 
 .markdown p + p {
-  @apply pt-6;
+  padding-top: 1.5rem;
 }
 
 .markdown b,
-strong {
-  @apply !text-black dark:!text-white;
+.markdown strong {
+  color: black;
+}
+
+@media (prefers-color-scheme: dark) {
+  .markdown b,
+  .markdown strong {
+    color: white;
+  }
 }
 
 .markdown p a {
-  @apply text-emerald-500 underline decoration-emerald-500/50 decoration-[1.5px] underline-offset-2;
-  @apply transition-all hover:brightness-75 hover:dark:brightness-125;
+  color: var(--color-emerald-500); /* emerald-500 */
+  text-decoration: underline;
+  text-decoration-color: color-mix(in oklab, var(--color-emerald-500) /* oklch(0.696 0.17 162.48) */ 50%, transparent);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.25rem;
+  transition: all;
+}
+
+.markdown p a:hover {
+  filter: brightness(0.75);
+}
+
+@media (prefers-color-scheme: dark) {
+  .markdown p a:hover {
+    filter: brightness(1.25);
+  }
 }
 
 .markdown p a strong {
-  @apply !text-emerald-500;
+  color: var(--color-emerald-500); /* emerald-500 */
 }
 
 .markdown img {
-  @apply mx-auto pb-6;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 1.5rem;
 }
 
 .markdown em {
-  @apply font-serif italic;
+  font-family: var(--font-serif);
+  font-style: italic;
 }
 
 .markdown ol {
-  @apply list-inside list-decimal pb-4 pl-4;
+  list-style-type: decimal;
+  list-style-position: inside;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
 }
 
 .markdown ol li::marker {
-  @apply font-bold;
+  font-weight: bold;
 }
 
 .markdown blockquote {
-  @apply my-4 w-fit border-l-2 border-emerald-500 bg-neutral-800 px-4 py-2;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: fit-content;
+  border-left-width: 2px;
+  border-left-color: var(--color-emerald-500)10b981; /* emerald-500 */
+  background-color: var(--color-neutral-800); /* neutral-800 */
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .markdown blockquote p + p {
-  @apply pt-2;
+  padding-top: 0.5rem;
 }

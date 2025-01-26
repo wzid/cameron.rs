@@ -1,7 +1,8 @@
 <script lang="ts">
   import Icon from "@iconify/svelte";
   import { timeAgo } from "$lib/utils";
-  let { data } = $props();
+  import type { Post } from "$types";
+  let { data }: { data: { post: Post } } = $props();
 
   let post_time = timeAgo(data.post.meta.date);
 
@@ -80,7 +81,7 @@
 </svelte:head>
 
 <div class="pb-6">
-  <h1 class="my-0 text-4xl sm:text-5xl">Hi, I'm Cameron 🚀</h1>
+  <h1 class="my-0! text-4xl! sm:text-5xl!">Hi, I'm Cameron 🚀</h1>
   <p class="text-lg text-neutral-500">follower of Christ, software engineer, and student</p>
 </div>
 
@@ -100,7 +101,7 @@
     </p>
     <div>
       <p>I am currently serving in the following roles:</p>
-      <ul class="!mt-2">
+      <ul class="mt-2!">
         <li>
           Senator for the <a class="link" href="https://www.liberty.edu/business/"> School of Business</a> in Student Government
         </li>
@@ -118,40 +119,42 @@
       <b>300k</b> views!
     </p>
   </div>
-  <div>
-    <h2 class="mb-6">Most recent from the blog</h2>
-    <a href={data.post.path}>
-      <div
-        class="group rounded-lg border border-neutral-300 p-4 shadow-none transition-all duration-200 ease-out hover:shadow-3xl dark:border-neutral-700 dark:bg-neutral-800 hover:dark:bg-[#333333]"
-      >
-        <div class="pb-1">
-          <div class="flex items-center justify-between">
-            <h3 class="font-bold leading-none text-neutral-800 dark:text-neutral-200">
-              {data.post.meta.title}
-            </h3>
-            <Icon icon="prime:arrow-up-right" width="18" height="18" class="block text-emerald-500" />
-          </div>
-          <div class="mb-1 sm:my-1">
-            <p class="inline text-base">{post_time}</p>
-            <div class="inline space-x-2 sm:ml-1">
-              {#each data.post.meta.tags as tag}
-                <span class="tag">#{tag}</span>
-              {/each}
-            </div>
+  <div class="w-full">
+    <h2 class="mb-6!">Most recent from the blog</h2>
+    <a
+      href="blog/{data.post.postSlug}"
+      class="flex flex-col group hover:shadow-3xl p-4 rounded-lg border border-neutral-300 shadow-none transition-all duration-200 ease-out dark:border-neutral-700 dark:bg-neutral-800 dark:hover:bg-[#333333]"
+    >
+      <div class="pb-1">
+        <div class="flex items-center justify-between">
+          <h3 class="leading-none font-bold text-neutral-800 dark:text-neutral-200">
+            {data.post.meta.title}
+          </h3>
+          <Icon icon="prime:arrow-up-right" width="18" height="18" class="block text-emerald-500" />
+        </div>
+        <div class="mb-1 sm:my-1">
+          <p class="inline text-base">{post_time}</p>
+          <div class="inline space-x-2 sm:ml-1">
+            {#each data.post.meta.tags as tag}
+              <span
+                class="rounded-xl bg-neutral-300 px-2 text-base text-neutral-600 transition-colors group-hover:bg-neutral-400 group-hover:text-neutral-700 dark:bg-neutral-700 dark:text-neutral-400 dark:group-hover:bg-neutral-600 dark:group-hover:text-neutral-300"
+                >#{tag}</span
+              >
+            {/each}
           </div>
         </div>
-        <p class="text-base">{data.post.meta.desc}</p>
       </div>
+      <p class="text-base">{data.post.meta.desc}</p>
     </a>
   </div>
   <div>
-    <h2 class="mb-6">My notable projects:</h2>
+    <h2 class="mb-6!">My notable projects:</h2>
     <div class="grid gap-2 sm:grid-cols-2 md:grid-cols-3">
       {#each projects as project}
         <a
           target="_blank"
           href={project.href}
-          class="flex flex-col justify-between rounded-lg border border-neutral-300 p-6 shadow-none transition-all duration-150 ease-out hover:shadow-3xl dark:border-neutral-700 dark:bg-neutral-800 hover:dark:bg-[#333333]"
+          class="hover:shadow-3xl flex flex-col justify-between rounded-lg border border-neutral-300 p-6 shadow-none transition-all duration-150 ease-out dark:border-neutral-700 dark:bg-neutral-800 dark:hover:bg-[#333333]"
         >
           <div class="flex flex-col gap-y-2">
             <h3 class="text-xl font-bold text-neutral-800 dark:text-neutral-200">
@@ -190,14 +193,9 @@
   </div>
 </div>
 
-<style lang="postcss">
+<style>
   ul {
     list-style-type: disc;
     padding-left: 1.5rem;
-  }
-
-  .tag {
-    @apply rounded-xl bg-neutral-300 px-2 text-base text-neutral-600 dark:bg-neutral-700 dark:text-neutral-400;
-    @apply transition-colors group-hover:bg-neutral-400 group-hover:text-neutral-700 group-hover:dark:bg-neutral-600 group-hover:dark:text-neutral-300;
   }
 </style>

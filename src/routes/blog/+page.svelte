@@ -25,6 +25,6 @@
   />
 </svelte:head>
 
-<h1 class="mb-8 py-0 text-4xl sm:text-5xl">Blog</h1>
+<h1 class="mb-8! py-0 text-4xl! sm:text-5xl!">Blog</h1>
 
 <PostListing posts={data.posts} />

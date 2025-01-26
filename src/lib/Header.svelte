@@ -10,23 +10,25 @@
     },
   ];
 
-  let page_title: string | null = $state(null);
-  const current_page_link = links.find(({ href }) => href.slice(1) === page.url.pathname.split("/")[1]);
-  // only needs to be run on page load/change
-  if (current_page_link) {
-    page_title = current_page_link.name.charAt(0).toUpperCase() + current_page_link.name.slice(1);
-  }
+  let page_title = $state(null);
+
+  $effect(() => {
+    const current_page_link = links.find(({ href }) => href.slice(1) === page.url.pathname.split("/")[1]);
+    page_title = current_page_link 
+      ? current_page_link.name.charAt(0).toUpperCase() + current_page_link.name.slice(1)
+      : null;
+  });
 </script>
 
 <header
-  class="bg-background supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50 backdrop-blur-2xl backdrop-saturate-[3]"
+  class="bg-background supports-backdrop-filter:bg-background/60 sticky top-0 z-50 backdrop-blur-2xl backdrop-saturate-3"
   data-sveltekit-noscroll
   data-sveltekit-preload-code="eager"
 >
   <div class="layout-md flex items-center justify-between border-b border-neutral-300 py-1 dark:border-neutral-700">
     <div class="inline-flex items-center">
       <h1
-        class="my-2 text-xl font-bold text-black hover:text-black/60 sm:text-2xl dark:text-white hover:dark:text-white/60"
+        class="my-2 text-xl font-bold text-black hover:text-black/60 sm:text-2xl! dark:text-white dark:hover:text-white/60"
       >
         <a href="/">cameron.rs</a>
       </h1>
@@ -45,7 +47,7 @@
             href={link.href}
             target="_blank"
             rel="noopener noreferrer"
-            class="transition-colors hover:text-neutral-900 hover:dark:text-neutral-100"
+            class="transition-colors hover:text-neutral-900 dark:hover:text-neutral-100"
             class:dark:text-white={page.url.pathname.split("/")[1] === link.href.slice(1)}
             class:text-black={page.url.pathname.split("/")[1] === link.href.slice(1)}
           >
@@ -54,7 +56,7 @@
         {:else}
           <a
             href={link.href}
-            class="transition-colors hover:text-neutral-900 hover:dark:text-neutral-100"
+            class="transition-colors hover:text-neutral-900 dark:hover:text-neutral-100"
             class:dark:text-white={page.url.pathname.split("/")[1] === link.href.slice(1)}
             class:text-black={page.url.pathname.split("/")[1] === link.href.slice(1)}
           >

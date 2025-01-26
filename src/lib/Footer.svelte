@@ -3,7 +3,7 @@
   const icon_size = 24;
 </script>
 
-<div class="mb-8 mt-20">
+<div class="mt-20 mb-8">
   <div class="flex flex-col items-center justify-center gap-6">
     <div class="flex gap-6 text-black dark:text-white">
       <a href="https://github.com/wzid" target="_blank">
