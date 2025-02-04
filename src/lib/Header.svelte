@@ -25,15 +25,15 @@
   data-sveltekit-noscroll
   data-sveltekit-preload-code="eager"
 >
-  <div class="layout-md flex items-center justify-between border-b border-neutral-300 py-1 dark:border-neutral-700">
+  <div class="layout-md flex items-center justify-between border-b py-1 border-neutral-700">
     <div class="inline-flex items-center">
       <h1
-        class="my-2 text-xl font-bold text-black hover:text-black/60 sm:text-2xl! dark:text-white dark:hover:text-white/60"
+        class="my-2 text-xl font-bold sm:text-2xl! text-white hover:text-white/60"
       >
         <a href="/">cameron.rs</a>
       </h1>
       {#if page_title}
-        <h2 class="ml-2 text-neutral-800 dark:text-neutral-200">
+        <h2 class="ml-2 text-neutral-200">
           <span class="hidden text-neutral-500 sm:inline">—</span>
           {page_title}
         </h2>
@@ -47,18 +47,16 @@
             href={link.href}
             target="_blank"
             rel="noopener noreferrer"
-            class="transition-colors hover:text-neutral-900 dark:hover:text-neutral-100"
-            class:dark:text-white={page.url.pathname.split("/")[1] === link.href.slice(1)}
-            class:text-black={page.url.pathname.split("/")[1] === link.href.slice(1)}
+            class="transition-colors hover:text-neutral-100"
+            class:text-white={page.url.pathname.split("/")[1] === link.href.slice(1)}
           >
             {link.name}
           </a>
         {:else}
           <a
             href={link.href}
-            class="transition-colors hover:text-neutral-900 dark:hover:text-neutral-100"
-            class:dark:text-white={page.url.pathname.split("/")[1] === link.href.slice(1)}
-            class:text-black={page.url.pathname.split("/")[1] === link.href.slice(1)}
+            class="transition-colors hover:text-neutral-100"
+            class:text-white={page.url.pathname.split("/")[1] === link.href.slice(1)}
           >
             {link.name}
           </a>

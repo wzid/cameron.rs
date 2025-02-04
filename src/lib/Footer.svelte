@@ -5,7 +5,7 @@
 
 <div class="mt-20 mb-8">
   <div class="flex flex-col items-center justify-center gap-6">
-    <div class="flex gap-6 text-black dark:text-white">
+    <div class="flex gap-6 text-white">
       <a href="https://github.com/wzid" target="_blank">
         <Icon icon="mdi:github" width={icon_size} height={icon_size} class="transition-all hover:brightness-[.80]" />
       </a>
@@ -29,6 +29,6 @@
         />
       </a>
     </div>
-    <p class="text-sm text-neutral-600 dark:text-neutral-400">cameron © 2023</p>
+    <p class="text-sm text-neutral-400">cameron © 2023</p>
   </div>
 </div>

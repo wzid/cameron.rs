@@ -21,7 +21,7 @@
         {#each post.meta.tags as tag}
           <a
             href="/blog/tag/{tag}"
-            class="rounded-xl bg-neutral-300 px-2 text-base text-neutral-600 transition-colors hover:bg-neutral-400 hover:text-neutral-700 dark:bg-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-600 dark:hover:text-neutral-300"
+            class="rounded-xl px-2 text-base transition-colors bg-neutral-700 text-neutral-400 hover:bg-neutral-600 hover:text-neutral-300"
           >
             #{tag}
           </a>

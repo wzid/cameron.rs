@@ -110,11 +110,11 @@
     <h2 class="mb-6!">Most recent from the blog</h2>
     <a
       href="blog/{data.post.postSlug}"
-      class="flex flex-col group hover:shadow-3xl p-4 rounded-lg border border-neutral-300 shadow-none transition-all duration-200 ease-out dark:border-neutral-700 dark:bg-neutral-800 dark:hover:bg-[#333333]"
+      class="flex flex-col group p-4 rounded-lg border shadow-none transition-all duration-200 ease-out border-neutral-700 bg-neutral-800 hover:bg-[#333333]"
     >
       <div class="pb-1">
         <div class="flex items-center justify-between">
-          <h3 class="leading-none font-bold text-neutral-800 dark:text-neutral-200">
+          <h3 class="leading-none font-bold text-neutral-200">
             {data.post.meta.title}
           </h3>
           <Icon icon="prime:arrow-up-right" width="18" height="18" class="block text-emerald-500" />
@@ -124,7 +124,7 @@
           <div class="inline space-x-2 sm:ml-1">
             {#each data.post.meta.tags as tag}
               <span
-                class="rounded-xl bg-neutral-300 px-2 text-base text-neutral-600 transition-colors group-hover:bg-neutral-400 group-hover:text-neutral-700 dark:bg-neutral-700 dark:text-neutral-400 dark:group-hover:bg-neutral-600 dark:group-hover:text-neutral-300"
+                class="rounded-xl px-2 text-base transition-colors bg-neutral-700 text-neutral-400 group-hover:bg-neutral-600 group-hover:text-neutral-300"
                 >#{tag}</span
               >
             {/each}
@@ -141,13 +141,13 @@
         <a
           target="_blank"
           href={project.href}
-          class="hover:shadow-3xl flex flex-col justify-between rounded-lg border border-neutral-300 p-6 shadow-none transition-all duration-150 ease-out dark:border-neutral-700 dark:bg-neutral-800 dark:hover:bg-[#333333]"
+          class="flex flex-col justify-between rounded-lg border p-6 shadow-none transition-all duration-150 ease-out border-neutral-700 bg-neutral-800 hover:bg-[#333333]"
         >
           <div class="flex flex-col gap-y-2">
-            <h3 class="text-xl font-bold text-neutral-800 dark:text-neutral-200">
+            <h3 class="text-xl font-bold text-neutral-200">
               {project.name}
             </h3>
-            <p class="text-base leading-snug text-neutral-600 dark:text-neutral-400">
+            <p class="text-base leading-snug text-neutral-400">
               {project.desc}
             </p>
           </div>

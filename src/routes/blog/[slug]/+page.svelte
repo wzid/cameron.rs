@@ -21,7 +21,7 @@
       <p class="inline pt-0 text-lg">Posted: {data.date}</p>
       <div class="inline space-x-2 sm:pl-2">
         {#each data.tags as tag}
-          <a href="/blog/tag/{tag}" class="rounded-xl bg-neutral-300 px-2 text-base text-neutral-600 dark:bg-neutral-700 dark:text-neutral-400 transition-colors hover:bg-neutral-400 hover:text-neutral-700 dark:hover:bg-neutral-600 dark:hover:text-neutral-300">#{tag}</a>
+          <a href="/blog/tag/{tag}" class="rounded-xl px-2 text-base bg-neutral-700 text-neutral-400 transition-colors hover:bg-neutral-600 hover:text-neutral-300">#{tag}</a>
         {/each}
       </div>
     </div>
@@ -30,7 +30,7 @@
     <data.content />
   </div>
   <div class="flex w-full justify-center">
-    <div class="w-fit pr-4 my-8 rounded-xl border border-neutral-300 bg-neutral-200 p-2 pl-4 dark:border-neutral-700 dark:bg-neutral-800">
+    <div class="w-fit pr-4 my-8 rounded-xl border p-2 pl-4 border-neutral-700 bg-neutral-800">
       <h2>👋 Thanks for reading!</h2>
       <p class="text-lg">If you enjoyed this post, then consider sharing it and/or following me on Github.</p>
       <div class="mt-2 mb-2 flex gap-4">

@@ -27,13 +27,7 @@
 }
 
 .markdown p a:hover {
-  filter: brightness(0.75);
-}
-
-@media (prefers-color-scheme: dark) {
-  .markdown p a:hover {
-    filter: brightness(1.25);
-  }
+  filter: brightness(1.25);
 }
 
 .markdown p a strong {
