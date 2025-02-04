@@ -1,13 +1,12 @@
 ---
 title: Competitive Programming on Apple Silicon
-date: "2-2-2025"
+date: "2-3-2025"
 desc: I decided to torture/challenge myself to solve some weekly competitive programming problems in ARM Assembly on my Mac. This blog documents my struggles and success and why you should try it as well.
 tags:
   - arm
   - aarch64
   - assembly
   - competitive programming
-draft: true
 ---
 
 For some reason on a random night I decided to solve some competitive programming problems in assembly. I picked out an easy and a medium problem that I had already solved in Python and got to work.
@@ -90,14 +89,14 @@ buffer: .space 1 ; We only need 1 byte for a single char
 
 
 <span class="split">
-Ok, easy enough, I do that and... now I get a compile error 🫤
+Ok, easy enough, I do that and... now I get a assemble error 🫤
 
 ```ansi
 as -arch arm64 -g -o lubbi.o lubbi.s
 [0m[1mlubbi.s:11:3: [31merror:[0m[1m unknown AArch64 fixup kind!
 [0m  adr x1, buffer
   [32m^
-[0mmake: *** [compile] Error 1
+[0mmake: *** [assemble] Error 1
 ```
 
 </span>
