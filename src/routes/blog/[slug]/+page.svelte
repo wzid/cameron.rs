@@ -1,8 +1,6 @@
-<!-- Alternate approach! 👀 -->
 <script lang="ts">
   import Icon from "@iconify/svelte";
   import "../markdown.css";
-  import "../prismtheme.css";
   import Meta from "$lib/Meta.svelte";
   let { data } = $props();
 </script>
@@ -31,29 +29,28 @@
   <div class="markdown">
     <data.content />
   </div>
-  <div
-    class="my-8 rounded-xl border-l-2 border-neutral-300 bg-neutral-200 p-2 pl-4 dark:border-neutral-700 dark:bg-neutral-800"
-  >
-    <h2>👋 Thanks for reading!</h2>
-    <p>If you enjoyed this post, then consider sharing it and/or following me on Github.</p>
-    <!-- <p>I am also currently <b>looking for an internship</b>, so please <a class="link" href="mailto:me@cameron.rs">contact me</a> with any opportunities</p> -->
-    <div class="mt-4 mb-2 flex gap-4">
-      <a
-        class="flex w-fit items-center gap-2 rounded-lg bg-[#1D9BF0] px-2 py-1 text-xl text-blue-100 transition-colors hover:bg-[#198CD8]"
-        target="_blank"
-        href="https://twitter.com/intent/tweet?text=I+just+read+{data.title}+by+%40cameronkffn+%F0%9F%91%87+https%3A%2F%2Fcameron.rs%2Fblog%2F{data.slug}"
-      >
-        <Icon icon="simple-icons:x" width="14" height="14" />
-        Tweet
-      </a>
-      <a
-        class="flex w-fit items-center gap-2 rounded-lg bg-[#02040A] px-2 py-1 text-xl text-blue-100 transition-colors hover:bg-neutral-900"
-        target="_blank"
-        href="https://github.com/wzid"
-      >
-        <Icon icon="mdi:github" width="18" height="18" />
-        Follow
-      </a>
+  <div class="flex w-full justify-center">
+    <div class="w-fit pr-4 my-8 rounded-xl border border-neutral-300 bg-neutral-200 p-2 pl-4 dark:border-neutral-700 dark:bg-neutral-800">
+      <h2>👋 Thanks for reading!</h2>
+      <p class="text-lg">If you enjoyed this post, then consider sharing it and/or following me on Github.</p>
+      <div class="mt-2 mb-2 flex gap-4">
+        <a
+          class="flex items-center gap-2 rounded-lg bg-[#1D9BF0] px-2 text-lg text-blue-100 transition-colors hover:bg-[#198CD8]"
+          target="_blank"
+          href="https://twitter.com/intent/tweet?text=I+just+read+{data.title}+by+%40cameronkffn+%F0%9F%91%87+https%3A%2F%2Fcameron.rs%2Fblog%2F{data.slug}"
+        >
+          <Icon icon="simple-icons:x" width="13" height="13" />
+          Tweet
+        </a>
+        <a
+          class="flex items-center gap-2 rounded-lg bg-[#02040A] px-2 py-1 text-lg text-blue-100 transition-colors hover:bg-neutral-900"
+          target="_blank"
+          href="https://github.com/wzid"
+        >
+          <Icon icon="mdi:github" width="18" height="18" />
+          Follow
+        </a>
+      </div>
     </div>
   </div>
 </article>

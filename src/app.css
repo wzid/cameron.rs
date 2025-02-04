@@ -12,7 +12,7 @@
 
   --font-sans: 'Source Sans 3', sans-serif;
   --font-serif: "Source Serif 4", serif;
-  --font-mono: Monaco, Courier New, monospace;
+  --font-mono: monospace, Monaco, serif;
 
   --shadow-3xl: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
 }

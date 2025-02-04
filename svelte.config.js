@@ -1,6 +1,21 @@
 import adapter from "@sveltejs/adapter-static";
 import { vitePreprocess } from "@sveltejs/vite-plugin-svelte";
-import { mdsvex } from "mdsvex";
+import { mdsvex, escapeSvelte } from "mdsvex";
+
+import { createHighlighter } from 'shiki';
+
+const theme = 'vitesse-dark';
+const highlighter = await createHighlighter({
+	themes: [theme],
+  // When you need to add a new language - add it here
+  // languages supported: https://shiki.style/languages
+  // ansi formatting help:
+  //    - https://raw.githubusercontent.com/shikijs/shiki/refs/heads/main/docs/languages.md
+  //    - https://fallendeity.github.io/discord.py-masterclass/markdown-and-ansi/#foreground-colors
+  langs: ["asm", "svelte", "cpp", "c", "apl", "javascript", "typescript", "jsx", "sh", "py"],
+});
+
+
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -11,6 +26,12 @@ const config = {
     vitePreprocess(),
     mdsvex({
       extensions: [".md"],
+      highlight: {
+        highlighter: async (code, lang = 'text') => {
+          const html = escapeSvelte(highlighter.codeToHtml(code, { lang, theme }));
+          return `{@html \`${html}\` }`;
+        }
+      }
     }),
   ],
 

@@ -17,18 +17,6 @@
   padding-top: 1.5rem;
 }
 
-.markdown b,
-.markdown strong {
-  color: black;
-}
-
-@media (prefers-color-scheme: dark) {
-  .markdown b,
-  .markdown strong {
-    color: white;
-  }
-}
-
 .markdown p a {
   color: var(--color-emerald-500); /* emerald-500 */
   text-decoration: underline;
@@ -79,7 +67,7 @@
   margin-bottom: 1rem;
   width: fit-content;
   border-left-width: 2px;
-  border-left-color: var(--color-emerald-500)10b981; /* emerald-500 */
+  border-left-color: var(--color-emerald-500); /* emerald-500 */
   background-color: var(--color-neutral-800); /* neutral-800 */
   padding-left: 1rem;
   padding-right: 1rem;
@@ -89,4 +77,58 @@
 
 .markdown blockquote p + p {
   padding-top: 0.5rem;
+}
+
+.markdown p code {
+  background-color: #262626;
+  font-size: 16px;
+  border-radius: .35em;
+  padding-left: .25em;
+  padding-right: .25em;
+}
+
+.markdown .split {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.markdown .split {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 768px /* --breakpoint-md */) {
+  .markdown .split {
+    flex-direction: column;
+  }
+  .markdown pre {
+    overflow: scroll;
+  }
+  .markdown .split pre {
+    max-width: 100%;
+  }
+}
+
+.markdown .split pre {
+  width: fit-content !important;
+}
+
+
+.markdown pre {
+  background-color: #262626 !important;
+  font-size: 14px;
+  border-radius: .5rem;
+  padding: .75rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
