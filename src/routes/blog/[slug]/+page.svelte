@@ -12,14 +12,14 @@
 />
 
 <article class="text-xl">
-  <header class="mb-4">
-    <h1 class="my-0 py-0 text-4xl">{data.title}</h1>
+  <header class="mb-2">
+    <h1 class="my-0! py-0! text-4xl">{data.title}</h1>
     {#if data.draft}
       <span class="rounded-xl bg-emerald-500 px-2 text-lg text-emerald-100">Draft</span>
     {/if}
-    <div class="pt-1 text-lg">
-      <p class="inline pt-0 text-lg">Posted: {data.date}</p>
-      <div class="inline space-x-2 sm:pl-2">
+    <div class="text-lg">
+      <p class="inline pt-0 text-lg">Posted: <span class="font-semibold">{data.date}</span></p>
+      <div class="flex flex-wrap gap-2 py-1">
         {#each data.tags as tag}
           <a href="/blog/tag/{tag}" class="rounded-xl px-2 text-base bg-neutral-700 text-neutral-400 transition-colors hover:bg-neutral-600 hover:text-neutral-300">#{tag}</a>
         {/each}

@@ -14,10 +14,10 @@
           </a>
         </h2>
         <p class="pt-0 sm:text-lg">
-          Published <span class=" ">{post.meta.date}</span>
+          Posted: <span class="font-semibold">{post.meta.date}</span>
         </p>
       </div>
-      <div class="space-x-2 py-1">
+      <div class="flex flex-wrap gap-2 py-1">
         {#each post.meta.tags as tag}
           <a
             href="/blog/tag/{tag}"

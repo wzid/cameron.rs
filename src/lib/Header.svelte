@@ -33,8 +33,8 @@
         <a href="/">cameron.rs</a>
       </h1>
       {#if page_title}
-        <h2 class="ml-2 text-neutral-200">
-          <span class="hidden text-neutral-500 sm:inline">—</span>
+        <h2 class="ml-2 text-neutral-200! mt-1.5!">
+          <span class="text-neutral-500 inline">—</span>
           {page_title}
         </h2>
       {/if}

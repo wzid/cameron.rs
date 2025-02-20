@@ -112,16 +112,16 @@
       href="blog/{data.post.postSlug}"
       class="flex flex-col group p-4 rounded-lg border shadow-none transition-all duration-200 ease-out border-neutral-700 bg-neutral-800 hover:bg-[#333333]"
     >
-      <div class="pb-1">
+      <div>
         <div class="flex items-center justify-between">
           <h3 class="leading-none font-bold text-neutral-200">
             {data.post.meta.title}
           </h3>
           <Icon icon="prime:arrow-up-right" width="18" height="18" class="block text-emerald-500" />
         </div>
-        <div class="mb-1 sm:my-1">
+        <div>
           <p class="inline text-base">{post_time}</p>
-          <div class="inline space-x-2 sm:ml-1">
+          <div class="flex flex-wrap gap-2 py-1">
             {#each data.post.meta.tags as tag}
               <span
                 class="rounded-xl px-2 text-base transition-colors bg-neutral-700 text-neutral-400 group-hover:bg-neutral-600 group-hover:text-neutral-300"
