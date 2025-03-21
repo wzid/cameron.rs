@@ -12,7 +12,7 @@ const highlighter = await createHighlighter({
   // ansi formatting help:
   //    - https://raw.githubusercontent.com/shikijs/shiki/refs/heads/main/docs/languages.md
   //    - https://fallendeity.github.io/discord.py-masterclass/markdown-and-ansi/#foreground-colors
-  langs: ["asm", "svelte", "cpp", "c", "apl", "javascript", "typescript", "jsx", "sh", "py"],
+  langs: ["asm", "svelte", "cpp", "c", "apl", "javascript", "typescript", "jsx", "sh", "py", "make"],
 });
 
 

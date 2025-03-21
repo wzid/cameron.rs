@@ -91,16 +91,6 @@
   margin-top: 1rem;
 }
 
-.markdown .split {
-  display: flex;
-  flex-direction: row;
-  justify-items: center;
-  align-items: center;
-  gap: 1.5rem;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-}
-
 @media screen and (max-width: 768px /* --breakpoint-md */) {
   .markdown .split {
     flex-direction: column;
