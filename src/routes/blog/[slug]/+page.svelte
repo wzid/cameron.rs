@@ -8,7 +8,7 @@
 <Meta
   title="cameron.rs - {data.title}"
   desc={data.desc}
-  keywords="blog, cameron, compilers, python, software engineering, liberty, university, rust, liberty university, {data.tags.join(", ")}"
+  keywords="{data.tags.join(", ")} blog, cameron, compilers, software engineering, liberty university"
 />
 
 <article class="text-xl">

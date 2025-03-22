@@ -1,7 +1,7 @@
 ---
 title: Setting up a Compiler Project with LLVM on MacOS
 date: "3-21-2025"
-desc: I found a stark lack of resources on how to setup a compiler project with LLVM on MacOS. This blog shows you how to setup said project.
+desc: I found a stark lack of resources on how to setup a compiler project that emits LLVM on MacOS. This blog shows you how to setup a structure for a project that compiles code and emits LLVM.
 tags:
   - compiler
   - macos
