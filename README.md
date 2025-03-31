@@ -1,7 +1,7 @@
 # cameron.rs
 
 Source code for my [personal website](https://cameron.rs).
-This website is powered by Svelte, Tailwind CSS 3, and Bun. To develop, run:
+This website is powered by Svelte, Tailwind CSS 4, and Bun. To develop, run:
 
 ```
 $ bun i
