@@ -7,6 +7,7 @@
 
 <Meta
   title="cameron.rs - blog #{tag}"
+  slug={`/blog/tag/${tag}`}
   desc="My blog where you can view some stuff that I've written"
   keywords="blog, cameron, compilers, python, software engineering, liberty, university, rust, liberty university, {tag}"
 />

@@ -8,6 +8,8 @@
 <Meta
   title="cameron.rs - {data.title}"
   desc={data.desc}
+  slug={`/blog/${data.slug}`}
+  author="Cameron Kauffman"
   keywords="{data.tags.join(", ")} blog, cameron, compilers, software engineering, liberty university"
 />
 
