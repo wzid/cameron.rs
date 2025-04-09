@@ -38,7 +38,7 @@ People are generating and running code on their computers they don't understand 
 
 These people are leading a charge into an age where **we produce more but understand less**.
 
-Our over-reliance on AI leads to cognitive offloading, where we put our trust in the machine rather than ourselves. There are so many dangers to outsourcing our decisions to AI. Dr. Joe Árvia states, _"AI robs people of the opportunity to practice the process of making thoughtful and defensible decisions on their own"_ (Árvai, 2024). I completely agree with him, when we blindly trust generative AI we are even risking decision fatigue where we become less confident in ourselves to make decisions. Our reliance on AI has weakens our ability to weigh options critically.
+Our over-reliance on AI leads to cognitive offloading, where we put our trust in the machine rather than ourselves. There are so many dangers to outsourcing our decisions to AI. Dr. Joe Árvia states, _"AI robs people of the opportunity to practice the process of making thoughtful and defensible decisions on their own"_ (Árvai, 2024). I completely agree with him, when we blindly trust generative AI we are even risking decision fatigue where we become less confident in ourselves to make decisions. Our reliance on AI has weakened our ability to weigh options critically.
 
 # What am I getting at?
 
