@@ -29,19 +29,10 @@
   <div class="markdown">
     <data.content />
   </div>
-  <div class="flex w-full justify-center">
-    <div class="w-fit pr-4 my-8 rounded-xl border p-2 pl-4 border-neutral-700 bg-neutral-800">
-      <h2>👋 Thanks for reading!</h2>
-      <p class="text-lg">If you enjoyed this post, then consider sharing it and/or following me on Github.</p>
-      <div class="mt-2 mb-2 flex gap-4">
-        <a
-          class="flex items-center gap-2 rounded-lg bg-[#1D9BF0] px-2 text-lg text-blue-100 transition-colors hover:bg-[#198CD8]"
-          target="_blank"
-          href="https://twitter.com/intent/tweet?text=I+just+read+{data.title}+by+%40cameronkffn+%F0%9F%91%87+https%3A%2F%2Fcameron.rs%2Fblog%2F{data.slug}"
-        >
-          <Icon icon="simple-icons:x" width="13" height="13" />
-          Tweet
-        </a>
+  <div class="flex w-full justify-start">
+    <div class="w-fit my-8 rounded-xl border px-4 py-2 pb-3 border-neutral-700 bg-neutral-800">
+      <div class="flex justify-between pb-1">
+        <h2>👋 Thanks for reading!</h2>
         <a
           class="flex items-center gap-2 rounded-lg bg-[#02040A] px-2 py-1 text-lg text-blue-100 transition-colors hover:bg-neutral-900"
           target="_blank"
@@ -51,6 +42,7 @@
           Follow
         </a>
       </div>
+      <p class="text-lg">If you enjoyed this post, then consider sharing it and/or following me on Github.</p>
     </div>
   </div>
 </article>
