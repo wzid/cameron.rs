@@ -18,9 +18,9 @@
 }
 
 .markdown p a {
-  color: var(--color-emerald-500); /* emerald-500 */
+  color: theme(--color-emerald-500); /* emerald-500 */
   text-decoration: underline;
-  text-decoration-color: color-mix(in oklab, var(--color-emerald-500) /* oklch(0.696 0.17 162.48) */ 50%, transparent);
+  text-decoration-color: color-mix(in oklab, theme(--color-emerald-500) /* oklch(0.696 0.17 162.48) */ 50%, transparent);
   text-decoration-thickness: 1.5px;
   text-underline-offset: 0.25rem;
   transition: all;
@@ -31,7 +31,11 @@
 }
 
 .markdown p a strong {
-  color: var(--color-emerald-500); /* emerald-500 */
+  color: theme(--color-emerald-500); /* emerald-500 */
+}
+
+.markdown strong {
+  color: white;
 }
 
 .markdown img {
@@ -61,8 +65,9 @@
   margin-bottom: 1rem;
   width: fit-content;
   border-left-width: 2px;
-  border-left-color: var(--color-emerald-500); /* emerald-500 */
-  background-color: var(--color-neutral-800); /* neutral-800 */
+  border-left-color: theme(--color-emerald-900); /* emerald-500 */
+  color: theme(--color-stone-400);
+  font-style: italic;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.5rem;
@@ -70,7 +75,7 @@
 }
 
 .markdown blockquote p + p {
-  padding-top: 0.5rem;
+  padding-top: 0.15rem;
 }
 
 .markdown p code {
