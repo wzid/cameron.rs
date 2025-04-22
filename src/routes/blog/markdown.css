@@ -45,7 +45,7 @@
 }
 
 .markdown em {
-  font-family: var(--font-serif);
+  font-family: theme(--font-serif);
   font-style: italic;
 }
 

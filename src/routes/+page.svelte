@@ -9,6 +9,13 @@
 
   let projects = [
     {
+      name: "scheduleit.now",
+      href: "https://scheduleit.now",
+      desc: " A web app built to make finding the best time to meet with your friends or team members easier.",
+      tool_icons: ["ri:svelte-fill", "devicon-plain:typescript", "mdi:tailwind"],
+      github: false,
+    },
+    {
       name: "mini-keynote",
       href: "https://github.com/wzid/mini-keynote",
       desc: " A tool to present slides based on a text file. Designed to be simple with few features.",
@@ -76,10 +83,10 @@
   <!-- prettier-ignore -->
   <div class="space-y-6">
     <p>
-      I do a lot of programming with various different tools. I'm well versed with programming languages such as Python, C, C++, JavaScript, Rust, and more.
+      I do a lot of programming with various different tools. I'm well versed with programming languages such as C, C++, Python, JavaScript, Rust, and more.
     </p>
     <p>
-      As a follower of Christ, I strive to glorify God in all that I do, including software development. I hope to
+      As a follower of Christ, I strive to glorify God in all that I do - including software development. I want to
       create meaningful software that impacts others in a positive way.
     </p>
     <p>
@@ -90,13 +97,12 @@
       <p>I am currently serving in the following roles:</p>
       <ul class="mt-2!">
         <li>
-          Senator for the <a class="link" href="https://www.liberty.edu/business/"> School of Business</a> in Student Government
+          Intern at <a class="link" href="https://www.garmin.com">Garmin</a> as an Embedded Software Engineer
         </li>
         <li>
-          Competition Coordinator for the <a class="link" href="https://lucpc.org">Competitive Programming Club</a>
+          Senator for the <a class="link" href="https://www.liberty.edu/business/"> School of Business</a> in Student Government
         </li>
-        <li>Innovation & Development officer for the Software Engineering Club</li>
-        <li>Tutor for CSCN 443: Operating Systems and CSCN 342: Computer Architecture </li>
+        <li>Tutor for CSCN 443: Operating Systems and CSCN 434: Programming Language Design and Compiler Theory </li>
       </ul>
     </div>
     <p>I am super interested in embedded systems, compilers, and programming languages.</p>
