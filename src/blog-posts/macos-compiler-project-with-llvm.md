@@ -71,38 +71,28 @@ The `src` directory is where all your `*.c` files will go and the `include` dire
 This is the most important part of this setup and took me forever to figure out.
 
 ```make
-# Compiler settings
-CC = clang
-CFLAGS = -Wall -Wextra $(shell llvm-config --cflags)
-LDFLAGS = $(shell llvm-config --ldflags --libs core)
-
-# Directory structure
-SRC_DIR = src
-OBJ_DIR = obj
-BIN_DIR = bin
-
 # Find source files and generate object file paths
-SRC_FILES = $(wildcard $(SRC_DIR)/*.c)
-OBJ_FILES = $(patsubst $(SRC_DIR)/%.c,$(OBJ_DIR)/%.o,$(SRC_FILES))
+SRC_FILES = $(wildcard src/*.c)
+OBJ_FILES = $(patsubst src/%.c,obj/%.o,$(SRC_FILES))
 
 # Output executable
-TARGET = $(BIN_DIR)/mycompiler
+TARGET = bin/mycompiler
 
 .PHONY: all clean
 
 all: $(TARGET)
 
-$(TARGET): $(OBJ_FILES) | $(BIN_DIR)
-	$(CC) $^ -o $@ $(LDFLAGS)
+$(TARGET): $(OBJ_FILES) | bin
+	clang $^ -o $@ $(shell llvm-config --ldflags --libs core)
 
-$(OBJ_DIR)/%.o: $(SRC_DIR)/%.c | $(OBJ_DIR)
-	$(CC) $(CFLAGS) -I./include -c $< -o $@
+obj/%.o: src/%.c | obj
+	clang -Wall -Wextra $(shell llvm-config --cflags) -I./include -c $< -o $@
 
-$(BIN_DIR) $(OBJ_DIR):
+bin obj:
 	mkdir -p $@
 
 clean:
-	rm -rf $(OBJ_DIR) $(BIN_DIR)
+	rm -rf obj bin
 ```
 
 The above code should allow you to code in an enviornment that imports LLVM header files.
