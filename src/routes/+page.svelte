@@ -9,6 +9,13 @@
 
   let projects = [
     {
+      name: "phi",
+      href: "https://github.com/wzid/phi",
+      desc: "An LLVM enabled compiler written in C",
+      tool_icons: ["devicon-plain:c", "devicon-plain:llvm"],
+      github: true
+    },
+    {
       name: "scheduleit.now",
       href: "https://scheduleit.now",
       desc: " A web app built to make finding the best time to meet with your friends or team members easier.",
@@ -89,27 +96,11 @@
       As a follower of Christ, I strive to glorify God in all that I do - including software development. I want to
       create meaningful software that impacts others in a positive way.
     </p>
-    <p>
-      Working towards that goal, I am currently pursuing a
-      <b>B.S. in Computer Science</b> at <a class="link" href="https://www.liberty.edu/"> Liberty University</a>.
-    </p>
-    <div>
-      <p>I am currently serving in the following roles:</p>
-      <ul class="mt-2!">
-        <li>
-          Intern at <a class="link" href="https://www.garmin.com">Garmin</a> as an Embedded Software Engineer
-        </li>
-        <li>
-          Senator for the <a class="link" href="https://www.liberty.edu/business/"> School of Business</a> in Student Government
-        </li>
-        <li>Tutor for CSCN 443: Operating Systems and CSCN 434: Programming Language Design and Compiler Theory </li>
-      </ul>
-    </div>
-    <p>I am super interested in embedded systems, compilers, and programming languages.</p>
+    <p>I will be working @ <b><a class="link" href="https://www.oracle.com">Oracle</a></b> as a software engineer in July 2026.</p>
     <p>
       I also write blog posts sometimes. Feel free to <a class="link" href="/blog">read them</a>. One of my posts was
       featured on a <a class="link" href="https://www.youtube.com/watch?v=8D7FZoQ-z20">YouTube video</a> with over
-      <b>300k</b> views!
+      <b>500k</b> views!
     </p>
   </div>
   <div class="w-full">
