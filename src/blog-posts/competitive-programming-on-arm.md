@@ -1,5 +1,5 @@
 ---
-title: Competitive Programming on Apple Silicon
+title: Competitive Programming on ARM Assembly
 date: "2-3-2025"
 desc: I decided to torture/challenge myself to solve some weekly competitive programming problems in ARM Assembly on my Mac. This blog documents my struggles and success and why you should try it as well.
 tags:
