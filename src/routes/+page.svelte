@@ -83,7 +83,7 @@
 
 <div class="pb-8 font-mono">
   <h1 class="my-0! text-4xl! sm:text-5xl! tracking-tight">cameron<span class="text-emerald-400">.rs</span></h1>
-  <p class="text-lg text-neutral-500 mt-1">// follower of Christ · software engineer · student</p>
+  <p class="text-base text-neutral-500 mt-1">// follower of Christ · software engineer · student</p>
 </div>
 
 <div class="space-y-12 text-xl">
