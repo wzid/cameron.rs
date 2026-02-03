@@ -11,6 +11,9 @@
   keywords="blog, cameron, compilers, python, software engineering, liberty, university, rust, liberty university"
 />
 
-<h1 class="mb-8! py-0 text-4xl! sm:text-5xl!">Blog</h1>
+<div class="mb-10">
+  <h1 class="mb-2! py-0 text-4xl! sm:text-5xl! tracking-tight">Blog</h1>
+  <p class="text-lg text-neutral-500">Thoughts on programming, compilers, and more</p>
+</div>
 
 <PostListing posts={data.posts} />

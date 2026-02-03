@@ -56,13 +56,13 @@ html {
 }
 
 .link {
-  @apply text-emerald-500 underline decoration-emerald-500/50 decoration-[1.5px] underline-offset-2;
-  @apply transition-all hover:brightness-125;
+  @apply text-emerald-400 underline decoration-emerald-500/40 decoration-[1.5px] underline-offset-3;
+  @apply transition-all hover:text-emerald-300 hover:decoration-emerald-400/60;
 }
 
 .link-hidden {
-  @apply decoration-emerald-500/50 decoration-[1.5px] underline-offset-2 hover:underline text-white;
-  @apply transition-all hover:brightness-125;
+  @apply decoration-emerald-500/40 decoration-[1.5px] underline-offset-3 hover:underline text-white;
+  @apply transition-all hover:text-emerald-300;
 }
 
 ::selection {

@@ -81,9 +81,9 @@
   keywords="cameron, compilers, python, software engineering, liberty, university, rust, liberty university"
 />
 
-<div class="pb-6">
-  <h1 class="my-0! text-4xl! sm:text-5xl!">Hi, I'm Cameron 🚀</h1>
-  <p class="text-lg text-neutral-500">follower of Christ, software engineer, and student</p>
+<div class="pb-8 font-mono">
+  <h1 class="my-0! text-4xl! sm:text-5xl! tracking-tight">cameron<span class="text-emerald-400">.rs</span></h1>
+  <p class="text-lg text-neutral-500 mt-1">// follower of Christ · software engineer · student</p>
 </div>
 
 <div class="space-y-12 text-xl">
@@ -107,21 +107,21 @@
     <h2 class="mb-6!">Most recent from the blog</h2>
     <a
       href="blog/{data.post.postSlug}"
-      class="flex flex-col group p-4 rounded-lg border shadow-none transition-all duration-200 ease-out border-neutral-700 bg-neutral-800 hover:bg-[#333333]"
+      class="flex flex-col group p-5 rounded-xl border shadow-none transition-all duration-300 ease-out border-neutral-700/50 bg-neutral-800/50 backdrop-blur-sm hover:bg-neutral-800 hover:border-emerald-500/30 hover:shadow-lg hover:shadow-emerald-500/5"
     >
       <div>
         <div class="flex items-center justify-between">
           <h3 class="leading-none font-bold text-neutral-200">
             {data.post.meta.title}
           </h3>
-          <Icon icon="prime:arrow-up-right" width="18" height="18" class="block text-emerald-500" />
+          <Icon icon="prime:arrow-up-right" width="18" height="18" class="block text-emerald-500 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
         </div>
         <div>
           <p class="inline text-base">{post_time}</p>
           <div class="flex flex-wrap gap-2 py-1">
             {#each data.post.meta.tags as tag}
               <span
-                class="rounded-xl px-2 text-base transition-colors bg-neutral-700 text-neutral-400 group-hover:bg-neutral-600 group-hover:text-neutral-300"
+                class="rounded-full px-2.5 py-0.5 text-sm transition-all duration-300 bg-neutral-700/50 text-neutral-400 group-hover:bg-emerald-500/10 group-hover:text-emerald-400"
                 >#{tag}</span
               >
             {/each}
@@ -132,16 +132,16 @@
     </a>
   </div>
   <div>
-    <h2 class="mb-6!">My notable projects:</h2>
+    <h2 class="mb-6!">Notable projects</h2>
     <div class="grid gap-2 sm:grid-cols-2 md:grid-cols-3">
       {#each projects as project}
         <a
           target="_blank"
           href={project.href}
-          class="flex flex-col justify-between rounded-lg border p-6 shadow-none transition-all duration-150 ease-out border-neutral-700 bg-neutral-800 hover:bg-[#333333]"
+          class="group/card flex flex-col justify-between rounded-xl border p-5 shadow-none transition-all duration-300 ease-out border-neutral-700/50 bg-neutral-800/50 backdrop-blur-sm hover:bg-neutral-800 hover:border-neutral-600 hover:-translate-y-1 hover:shadow-xl hover:shadow-black/20"
         >
           <div class="flex flex-col gap-y-2">
-            <h3 class="text-xl font-bold text-neutral-200">
+            <h3 class="text-xl font-bold text-neutral-200 group-hover/card:text-white transition-colors duration-300">
               {project.name}
             </h3>
             <p class="text-base leading-snug text-neutral-400">
@@ -150,9 +150,9 @@
           </div>
           <div class="flex flex-row-reverse justify-between">
             {#if project.github}
-              <Icon icon="mdi:github" width="18" height="18" class="mt-4 block text-neutral-400" />
+              <Icon icon="mdi:github" width="18" height="18" class="mt-4 block text-neutral-500 transition-colors duration-300 group-hover/card:text-neutral-300" />
             {:else}
-              <Icon icon="prime:arrow-up-right" width="18" height="18" class="mt-4 block text-neutral-400" />
+              <Icon icon="prime:arrow-up-right" width="18" height="18" class="mt-4 block text-neutral-500 transition-all duration-300 group-hover/card:text-emerald-400 group-hover/card:translate-x-0.5 group-hover/card:-translate-y-0.5" />
             {/if}
             <div class="flex gap-2">
               {#each project.tool_icons as icon}

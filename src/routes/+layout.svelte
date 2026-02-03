@@ -11,7 +11,7 @@
 
 <Header />
 
-<main class="layout-md pt-12">
+<main class="layout-md pt-8">
   {@render children?.()}
 </main>
 
