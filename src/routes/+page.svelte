@@ -81,9 +81,15 @@
   keywords="cameron, compilers, python, software engineering, liberty, university, rust, liberty university"
 />
 
-<div class="pb-8 font-mono">
-  <h1 class="my-0! text-4xl! sm:text-5xl! tracking-tight">cameron<span class="text-emerald-400">.rs</span></h1>
-  <p class="text-base text-neutral-500 mt-1">// follower of Christ · software engineer · student</p>
+<div class="flex gap-8 items-center mb-4">
+  <img
+    src="/images/cam2.jpeg"
+    alt="Cameron on a rooftop looking at the camera"
+    class="w-40 h-40 border-4 border-neutral-700/50 object-cover object-top ring-1 ring-black/40" />
+  <div class="font-mono">
+    <h1 class="my-0! text-4xl! sm:text-5xl! tracking-tight">cameron<span class="text-emerald-400">.rs</span></h1>
+    <p class="text-base text-neutral-500 mt-1">// follower of Christ · software engineer · student</p>
+  </div>
 </div>
 
 <div class="space-y-12 text-xl">
@@ -91,10 +97,6 @@
   <div class="space-y-6">
     <p>
       I do a lot of programming with various different tools. I'm well versed with programming languages such as C, C++, Python, JavaScript, Rust, and more.
-    </p>
-    <p>
-      As a follower of Christ, I strive to glorify God in all that I do - including software development. I want to
-      create meaningful software that impacts others in a positive way.
     </p>
     <p>I will be working @ <b><a class="link" href="https://www.oracle.com">Oracle</a></b> as a software engineer in July 2026.</p>
     <p>
