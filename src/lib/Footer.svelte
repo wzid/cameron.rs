@@ -6,7 +6,7 @@
     { href: "https://github.com/wzid", icon: "mdi:github", label: "wzid" },
     { href: "https://youtube.com/@wzid-codes", icon: "mdi:youtube", label: "wzid-codes" },
     { href: "https://linkedin.com/in/cameronkffn", icon: "mdi:linkedin", label: "cameronkffn" },
-    { href: "mailto:me@cameron.rs", icon: "mdi:email", label: "Email" },
+    { href: null, icon: "mdi:email", label: "me@cameron 'dot' rs" },
   ];
 </script>
 

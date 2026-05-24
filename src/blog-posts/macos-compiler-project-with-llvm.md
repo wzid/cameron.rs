@@ -42,7 +42,7 @@ export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 
 You should be good to go now! 
 
-If you end up with problems following this article, please don't hesitate to [email me](mailto:me@cameron.rs) with your problems so I can update this blog to adjust the setup process.
+If you end up with problems following this article, please don't hesitate to email me: `me@cameron 'dot' rs` with your problems so I can update this blog to adjust the setup process.
 
 ## Directory Structure
 
